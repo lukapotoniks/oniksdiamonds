@@ -1,0 +1,31 @@
+{
+  "proizvodi": [
+    {
+      "naziv": "Prsten sa dijamantskim cvetom",
+      "kolekcija": "Hana",
+      "vrsta": ["verenicko", "prstenje"],
+      "materijal": "14K žuto zlato · 1,83 g",
+      "kamenje": "Dijamant 0,28 ct · F / VS2",
+      "cena": "105.500 RSD",
+      "slike": ["images/cluster-close.jpg", "images/cluster-hand.jpg"]
+    },
+    {
+      "naziv": "Prsten sa london topazom i dijamantima",
+      "kolekcija": "Hana",
+      "vrsta": ["prstenje"],
+      "materijal": "14K belo zlato · 1,14 g",
+      "kamenje": "London topaz 0,29 ct · Dijamanti 0,05 ct · F / VS2",
+      "cena": "64.350 RSD",
+      "slike": ["images/sapphire-close.jpg", "images/sapphire-hand.jpg"]
+    },
+    {
+      "naziv": "Privezak krst sa dijamantima",
+      "kolekcija": "Elena",
+      "vrsta": ["ogrlice"],
+      "materijal": "14K belo zlato · sa lančićem · 1,61 g",
+      "kamenje": "Dijamanti 0,11 ct · F / VS2",
+      "cena": "58.800 RSD",
+      "slike": ["images/cross-pendant.jpg"]
+    }
+  ]
+}

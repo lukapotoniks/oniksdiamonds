@@ -1,0 +1,68 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+collections:
+  - name: "katalog"
+    label: "Katalog"
+    files:
+      - name: "proizvodi"
+        label: "Proizvodi"
+        file: "content/proizvodi.json"
+        fields:
+          - label: "Proizvodi"
+            name: "proizvodi"
+            widget: "list"
+            label_singular: "Proizvod"
+            summary: "{{fields.naziv}} — {{fields.cena}}"
+            fields:
+              - { label: "Naziv", name: "naziv", widget: "string", hint: "npr. Prsten sa dijamantskim cvetom" }
+              - { label: "Kolekcija", name: "kolekcija", widget: "string", hint: "Hana, Elena, ili upišite ime nove kolekcije" }
+              - label: "Vrsta nakita"
+                name: "vrsta"
+                widget: "select"
+                multiple: true
+                options:
+                  - { label: "Vereničko prstenje", value: "verenicko" }
+                  - { label: "Prstenje", value: "prstenje" }
+                  - { label: "Minđuše", value: "mindjuse" }
+                  - { label: "Ogrlice i privesci", value: "ogrlice" }
+                  - { label: "Narukvice", value: "narukvice" }
+              - { label: "Materijal", name: "materijal", widget: "string", hint: "npr. 14K žuto zlato · 1,83 g" }
+              - { label: "Kamenje", name: "kamenje", widget: "string", required: false, hint: "npr. Dijamant 0,28 ct · F / VS2" }
+              - { label: "Cena", name: "cena", widget: "string", hint: "npr. 105.500 RSD  ili  Cena na upit" }
+              - label: "Slike"
+                name: "slike"
+                widget: "list"
+                field: { label: "Slika", name: "slika", widget: "image" }
+                hint: "Prva slika je glavna. Dodajte više za listanje."
+
+      - name: "kolekcije"
+        label: "Kolekcije"
+        file: "content/kolekcije.json"
+        fields:
+          - label: "Kolekcije"
+            name: "kolekcije"
+            widget: "list"
+            label_singular: "Kolekcija"
+            summary: "{{fields.naziv}}"
+            fields:
+              - { label: "Naziv", name: "naziv", widget: "string", hint: "npr. Hana" }
+              - { label: "Opis", name: "opis", widget: "text", hint: "Prikazuje se kad se izabere kolekcija" }
+
+  - name: "podesavanja"
+    label: "Podešavanja"
+    files:
+      - name: "kontakt"
+        label: "Kontakt podaci"
+        file: "content/kontakt.json"
+        fields:
+          - { label: "Adresa", name: "adresa", widget: "string" }
+          - { label: "Grad", name: "grad", widget: "string" }
+          - { label: "Telefon", name: "telefon", widget: "string" }
+          - { label: "Telefon za linkove", name: "telefon_link", widget: "string", hint: "Format: +381621788052" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Radno vreme", name: "radno_vreme", widget: "text" }
