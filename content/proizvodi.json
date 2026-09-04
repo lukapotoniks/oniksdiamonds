@@ -85,6 +85,20 @@
       "materijal": "14K belo zlato · 2,04 g",
       "kamenje": "Dijamant 0.44ct · F / VS2",
       "cena": "152.100 RSD"
+    },
+    {
+      "slike": [
+        "images/uploads/file_00000000cea881f49e71d1175a8d8cbf.png",
+        "images/uploads/file_000000007748820aa062af04ba630e19.png"
+      ],
+      "naziv": "Prsten sa dijamantima pahuljica",
+      "kolekcija": "Hana",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K belo zlato · 1,91 g ",
+      "kamenje": "Dijamant 0.14ct · F / VS2",
+      "cena": "70.200 RSD"
     }
   ]
 }
