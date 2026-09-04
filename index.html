@@ -169,6 +169,36 @@
     box-shadow:0 0 3px rgba(0,0,0,0.35); transition:background .3s ease, transform .3s ease;
   }
   .dots i.on{background:#fff; transform:scale(1.35);}
+
+  /* arrows for desktop */
+  .nav-arrow{
+    position:absolute; top:50%; transform:translateY(-50%);
+    width:34px; height:34px; border:none; border-radius:50%;
+    background:rgba(255,255,255,0.88); color:var(--espresso);
+    cursor:pointer; display:none; align-items:center; justify-content:center;
+    font-size:1rem; line-height:1; z-index:3; opacity:0; transition:opacity .25s ease, background .25s ease;
+    box-shadow:0 1px 6px rgba(0,0,0,0.16);
+  }
+  .nav-arrow:hover{background:#fff;}
+  .nav-arrow.prev{left:10px;}
+  .nav-arrow.next{right:10px;}
+  .prod .ph:hover .nav-arrow{opacity:1;}
+  @media (hover:hover) and (pointer:fine){
+    .nav-arrow{display:flex;}
+  }
+
+  /* arrows in lightbox */
+  .lb-arrow{
+    position:absolute; top:50%; transform:translateY(-50%);
+    width:46px; height:46px; border:none; border-radius:50%;
+    background:rgba(255,255,255,0.12); color:var(--cream);
+    cursor:pointer; display:none; align-items:center; justify-content:center;
+    font-size:1.3rem; z-index:5; transition:background .25s ease;
+  }
+  .lb-arrow:hover{background:rgba(255,255,255,0.25);}
+  .lb-arrow.prev{left:3vw;}
+  .lb-arrow.next{right:3vw;}
+  .lb.multi .lb-arrow{display:flex;}
   .prod .nm{font-family:var(--serif); font-style:italic; font-size:1.25rem; margin-top:20px; line-height:1.35;}
   .prod .mt{font-size:0.68rem; letter-spacing:0.12em; color:var(--gold-deep); margin-top:9px;}
   .prod .sp{font-size:0.76rem; color:var(--espresso-soft); margin-top:7px; line-height:1.5;}
@@ -299,8 +329,7 @@
 </section>
 
 <div class="plate">
-  <img loading="lazy" decoding="async" src="images/ring-blue-fabric.jpg" alt="Solitaire prsten sa dijamantima na krem svili">
-  <div class="cap">Solitaire linija<small>BELO ZLATO</small></div>
+  <img src="images/ring-blue-fabric.jpg" alt="Dijamantski prsten na krem svili">
 </div>
 
 <section id="nasledje" class="lineage">
@@ -313,7 +342,7 @@
         <p>Ovde se ta tradicija širi dalje: pažljivije biranje kamenja, savremeniji jezik dizajna i kolekcija zamišljena da raste van granica jedne radnje.</p>
       </div>
       <div class="lineage-img">
-        <img loading="lazy" decoding="async" src="images/earring-model.jpg" alt="Dijamantske minđuše na modelu">
+        <img src="images/earring-model.jpg" alt="Dijamantske minđuše na modelu">
       </div>
     </div>
   </div>
@@ -383,6 +412,8 @@
 
 <div class="lb" id="lightbox">
   <button class="lb-close" id="lbClose" aria-label="Zatvori">&times;</button>
+  <button class="lb-arrow prev" id="lbPrev" aria-label="Prethodna">&#10094;</button>
+  <button class="lb-arrow next" id="lbNext" aria-label="Sledeća">&#10095;</button>
   <div class="lb-track" id="lbTrack"></div>
   <div class="lb-info">
     <div class="lb-dots" id="lbDots"></div>
@@ -490,7 +521,22 @@
     const close = () => { lb.classList.remove('open'); document.body.style.overflow=''; };
     document.getElementById('lbClose').addEventListener('click', close);
     lb.addEventListener('click', e => { if (e.target === lb) close(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
+    const lbStep = dir => {
+      const w = track.clientWidth, total = track.children.length;
+      if (!total) return;
+      const i = Math.round(track.scrollLeft / w);
+      track.scrollTo({ left: ((i + dir + total) % total) * w, behavior: 'smooth' });
+    };
+    document.getElementById('lbPrev').addEventListener('click', e => { e.stopPropagation(); lbStep(-1); });
+    document.getElementById('lbNext').addEventListener('click', e => { e.stopPropagation(); lbStep(1); });
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') close();
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'ArrowLeft')  lbStep(-1);
+      if (e.key === 'ArrowRight') lbStep(1);
+    });
   })();
 
   // ---------- load catalog from CMS content files ----------
@@ -544,7 +590,7 @@
       const dots = imgs.length > 1 ? `<div class="dots">${imgs.map((_,i)=>`<i class="${i===0?'on':''}"></i>`).join('')}</div>` : '';
       return `<div class="prod" data-cat="${esc(vrste)}" data-col="${esc(slug(p.kolekcija))}"
         data-imgs="${esc(imgs.join('|'))}" data-name="${esc(p.naziv)}" data-meta="${esc(metaBits.join(' · '))}">
-        <div class="ph"><div class="slider">${slides}</div>${dots}</div>
+        <div class="ph"><div class="slider">${slides}</div>${dots}${imgs.length>1?'<button class="nav-arrow prev" aria-label="Prethodna">&#10094;</button><button class="nav-arrow next" aria-label="Sledeća">&#10095;</button>':''}</div>
         <div class="nm">${esc(p.naziv)}</div>
         <div class="mt">${esc([p.kolekcija, p.materijal].filter(Boolean).join(' · ').toUpperCase())}</div>
         ${p.kamenje ? `<div class="sp">${esc(p.kamenje)}</div>` : ''}
@@ -593,13 +639,25 @@
       };
     });
 
-    // sliders
+    // sliders + arrows
     document.querySelectorAll('#prodGrid .prod').forEach(p => {
       const sl = p.querySelector('.slider'), dots = p.querySelectorAll('.dots i');
       if (sl && dots.length) sl.addEventListener('scroll', () => {
         const i = Math.round(sl.scrollLeft / sl.clientWidth);
         dots.forEach((d,n) => d.classList.toggle('on', n === i));
       }, { passive:true });
+
+      const step = dir => {
+        if (!sl) return;
+        const w = sl.clientWidth;
+        const i = Math.round(sl.scrollLeft / w);
+        const total = sl.children.length;
+        const next = (i + dir + total) % total;
+        sl.scrollTo({ left: next * w, behavior: 'smooth' });
+      };
+      const prev = p.querySelector('.nav-arrow.prev'), nxt = p.querySelector('.nav-arrow.next');
+      if (prev) prev.addEventListener('click', e => { e.stopPropagation(); step(-1); });
+      if (nxt)  nxt.addEventListener('click',  e => { e.stopPropagation(); step(1);  });
     });
 
     // lightbox
@@ -614,6 +672,7 @@
           document.getElementById('lbName').textContent = p.dataset.name || '';
           document.getElementById('lbMeta').textContent = p.dataset.meta || '';
           track.scrollLeft = 0;
+          lb.classList.toggle('multi', imgs.length > 1);
           lb.classList.add('open'); document.body.style.overflow='hidden';
         };
       });
