@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "slug": "kako-izabrati-verenicki-prsten",
+      "naslov": "Kako izabrati verenički prsten — vodič u 7 koraka",
+      "datum": "2026-09-08T09:00:00.000Z",
+      "slika": "images/ring-blue-fabric.jpg",
+      "uvod": "Verenički prsten se bira jednom. Evo kako da prođete kroz izbor kamena, zlata, oblika i veličine bez greške — i šta zaista utiče na cenu."
+    },
+    {
+      "slug": "4c-dijamanta-objasnjeno-jednostavno",
+      "naslov": "4C dijamanta objašnjeno jednostavno",
+      "datum": "2026-09-07T09:00:00.000Z",
+      "slika": "images/dijamant.jpg",
+      "uvod": "Karat, čistoća, boja i brušenje — četiri merila po kojima se svaki dijamant ocenjuje i naplaćuje. Šta koje od njih znači i gde se isplati uštedeti."
+    },
+    {
+      "slug": "prirodni-ili-laboratorijski-dijamant",
+      "naslov": "Prirodni ili laboratorijski dijamant — u čemu je razlika",
+      "datum": "2026-09-06T09:00:00.000Z",
+      "slika": "images/cluster-close.jpg",
+      "uvod": "Laboratorijski dijamanti su hemijski isti kao prirodni, a koštaju višestruko manje. Zašto onda uopšte birati prirodni? Pošteno o razlikama, ceni i vrednosti."
+    }
+  ]
+}

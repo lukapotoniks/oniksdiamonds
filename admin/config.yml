@@ -5,6 +5,10 @@ backend:
 media_folder: "images/uploads"
 public_folder: "images/uploads"
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
   - name: "katalog"
     label: "Katalog"
@@ -52,6 +56,24 @@ collections:
             fields:
               - { label: "Naziv", name: "naziv", widget: "string", hint: "npr. Hana" }
               - { label: "Opis", name: "opis", widget: "text", hint: "Prikazuje se kad se izabere kolekcija" }
+
+  - name: "blog"
+    label: "Blog"
+    label_singular: "Tekst"
+    folder: "content/blog"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    summary: "{{naslov}} — {{datum | date('DD.MM.YYYY')}}"
+    sort_by: "datum"
+    fields:
+      - { label: "Naslov", name: "naslov", widget: "string", hint: "Naslov teksta — neka sadrži ključnu reč, npr. Kako izabrati verenički prsten" }
+      - { label: "Datum objave", name: "datum", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss.SSS[Z]", date_format: "DD.MM.YYYY", time_format: false }
+      - { label: "Naslovna slika", name: "slika", widget: "image", hint: "Vodoravna slika, najbolje 1600×900 px" }
+      - { label: "Uvod", name: "uvod", widget: "text", hint: "2–3 rečenice koje se vide u listi tekstova i u Google rezultatima" }
+      - { label: "Opis za Google (meta)", name: "meta_opis", widget: "string", required: false, hint: "Do 160 znakova. Ako ostane prazno, koristi se Uvod." }
+      - { label: "Tekst", name: "body", widget: "markdown", hint: "Koristite podnaslove (Heading 2) za svako pitanje na koje tekst odgovara." }
 
   - name: "podesavanja"
     label: "Podešavanja"
