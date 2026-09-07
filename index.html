@@ -93,7 +93,20 @@
   .mobile-panel{position:fixed; inset:0; background:var(--espresso); display:none; flex-direction:column; align-items:center; justify-content:center; gap:36px; z-index:65;}
   .mobile-panel.open{display:flex;}
   .mobile-panel a{color:var(--gold-pale); font-family:var(--serif); font-style:italic; font-size:1.6rem;}
-  @media(min-width:860px){ nav.links{display:flex; align-items:center;} .menu-btn{display:none;} }
+  @media(min-width:860px){ nav.links{display:flex; align-items:center;} }
+  .more-wrap{position:relative; display:flex; align-items:center; margin-left:auto;}
+  @media(min-width:860px){ nav.links{margin-left:auto;} .more-wrap{margin-left:44px;} }
+  .more-menu{
+    position:absolute; top:calc(100% + 14px); right:0; transform:translateY(-6px);
+    background:var(--white); border:1px solid var(--line); min-width:190px;
+    opacity:0; visibility:hidden; transition:all .28s ease; padding:6px 0; z-index:80;
+  }
+  .more-wrap.open .more-menu{opacity:1; visibility:visible; transform:translateY(0);}
+  .more-menu a{display:block; padding:13px 22px; color:var(--espresso); font-family:var(--serif); font-style:italic; font-size:1rem; letter-spacing:0; transition:background .25s ease;}
+  .more-menu a:hover{background:var(--gold-pale);}
+  .more-menu .lang{margin:4px 14px 8px; padding-top:10px; border-top:1px solid var(--line); color:var(--espresso);}
+  .more-menu .lang button{font-size:0.7rem;}
+  @media(max-width:859px){ .more-menu{display:none;} }
 
   /* ---------- hero : full viewport, minimal ---------- */
   .hero{position:relative; height:100vh; min-height:640px; overflow:hidden; display:flex; align-items:flex-end; background:#171310;}
@@ -437,12 +450,17 @@
         </span>
       </span>
       <a href="#kamenje">Drago kamenje</a>
-      <a href="#poseta">Kontakt</a>
-      <span class="lang" id="langBar">
-        <button data-l="sr" class="on">SR</button><span>·</span><button data-l="en">EN</button><span>·</span><button data-l="hu">HU</button>
-      </span>
     </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Meni"><span></span><span></span><span></span></button>
+    <span class="more-wrap" id="moreWrap">
+      <button class="menu-btn" id="menuBtn" aria-label="Meni"><span></span><span></span><span></span></button>
+      <span class="more-menu" id="moreMenu">
+        <a href="#poseta">Kontakt</a>
+        <!-- <a href="blog/">Blog</a> -->
+        <span class="lang" id="langBar">
+          <button data-l="sr" class="on">SR</button><span>·</span><button data-l="en">EN</button><span>·</span><button data-l="hu">HU</button>
+        </span>
+      </span>
+    </span>
   </div>
 </header>
 <div class="mobile-panel" id="mobilePanel">
@@ -908,8 +926,16 @@
 <script>
   const menuBtn = document.getElementById('menuBtn');
   const panel = document.getElementById('mobilePanel');
-  menuBtn.addEventListener('click', () => panel.classList.toggle('open'));
+  const moreWrap = document.getElementById('moreWrap');
+  const isDesktop = () => window.matchMedia('(min-width:860px)').matches;
+  menuBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    if (isDesktop()) moreWrap.classList.toggle('open');
+    else panel.classList.toggle('open');
+  });
   panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => panel.classList.remove('open')));
+  moreWrap.querySelectorAll('a').forEach(a => a.addEventListener('click', () => moreWrap.classList.remove('open')));
+  document.addEventListener('click', e => { if (!moreWrap.contains(e.target)) moreWrap.classList.remove('open'); });
 
   // hero video carousel: play each clip once, then crossfade to the next
   const heroVideos = Array.from(document.querySelectorAll('.hero-video'));
