@@ -1109,6 +1109,7 @@
   async function loadCatalog(){
     const grid    = document.getElementById('prodGrid');
     const colBar  = document.getElementById('colFilters');
+    const catBar  = document.getElementById('catFilters');
     const colTitle= document.getElementById('colTitle');
     const colDesc = document.getElementById('colDesc');
     if (!grid) return;
@@ -1136,6 +1137,18 @@
       const nameOf = s => { const c = cols.find(x => slug(x.naziv) === s); return c ? c.naziv : s; };
       colBar.innerHTML = '<button class="on" data-col="sve">SVE</button>' +
         present.map(s => `<button data-col="${esc(s)}">${esc(nameOf(s).toUpperCase())}</button>`).join('');
+    }
+
+    // type filter buttons — built from the types actually present in products
+    if (catBar){
+      const CAT_LABEL = { verenicko:'VERENIČKO PRSTENJE', prstenje:'PRSTENJE', mindjuse:'MINĐUŠE', ogrlice:'OGRLICE I PRIVESCI', narukvice:'NARUKVICE' };
+      const ORDER = ['verenicko','prstenje','mindjuse','ogrlice','narukvice'];
+      const presentCat = new Set();
+      prods.forEach(p => (Array.isArray(p.vrsta) ? p.vrsta : [p.vrsta]).filter(Boolean).forEach(v => presentCat.add(v)));
+      const ordered = ORDER.filter(c => presentCat.has(c)).concat([...presentCat].filter(c => !ORDER.includes(c)));
+      catBar.innerHTML = '<button class="on" data-cat="sve">SVE</button>' +
+        ordered.map(c => `<button data-cat="${esc(c)}">${esc(CAT_LABEL[c] || c.toUpperCase())}</button>`).join('');
+      curCat = 'sve';
     }
 
     // product cards
