@@ -125,6 +125,20 @@
       "materijal": "14K žuto zlato · 2,24 g ",
       "kamenje": "Dijamant 0.30 ct · F / VS2",
       "cena": "128.700"
+    },
+    {
+      "naziv": "Dijamantske minđuše cvet",
+      "kolekcija": "Hana",
+      "vrsta": [
+        "mindjuse"
+      ],
+      "materijal": "14K belo zlato · 0.99 g",
+      "kamenje": "Dijamant 0.32 ct · F / VS2",
+      "cena": "74.900 RSD",
+      "slike": [
+        "images/uploads/mindj-cvet-1.png",
+        "images/uploads/minjd-cvet-2.png"
+      ]
     }
   ]
 }
