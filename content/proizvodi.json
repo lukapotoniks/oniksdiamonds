@@ -220,6 +220,20 @@
       "materijal": "14K žuto zlato · 1,7 g ",
       "kamenje": "Dijamant 0.32 ct · F / VS2",
       "cena": "115.000 RSD"
+    },
+    {
+      "naziv": "Dijamantski verenički prsten V",
+      "kolekcija": "Elena",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "14K belo zlato · 2,43 g",
+      "kamenje": "Dijamant 0.10 ct · F / VS2",
+      "cena": "74.900 RSD",
+      "slike": [
+        "images/uploads/dpv4vk1s.jpg",
+        "images/uploads/chatgpt-image-sep-11-2026-12_52_21-am.png"
+      ]
     }
   ]
 }
