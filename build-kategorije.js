@@ -108,7 +108,7 @@ function card(p) {
 </div>`;
 }
 
-const TILE_IMG = { verenicko: '/images/cluster-hand.jpg', prstenje: '/images/sapphire-hand.jpg', mindjuse: '/images/earring-model.jpg', ogrlice: '/images/cross-pendant.jpg', narukvice: '/images/baguette-hand.jpg' };
+const TILE_IMG = { verenicko: '/images/uploads/vunterslauska.png', prstenje: '/images/sapphire-hand.jpg', mindjuse: '/images/earring-model.jpg', ogrlice: '/images/cross-pendant.jpg', narukvice: '/images/baguette-hand.jpg' };
 
 const JS = `
   const menuBtn = document.getElementById('menuBtn'), panel = document.getElementById('mobilePanel'), moreWrap = document.getElementById('moreWrap');
