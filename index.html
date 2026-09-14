@@ -62,12 +62,16 @@
   .lang{display:flex; align-items:center; gap:2px; margin-left:30px;}
   .nav-row{position:relative;}
   .langpill{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); margin:0; gap:0;
-            border:1px solid currentColor; border-radius:2px; overflow:hidden; z-index:3;}
-  .langpill button{margin:0; padding:7px 17px; font-size:0.68rem; letter-spacing:0.16em; opacity:0.75;
-                   background:none; border:0; border-left:1px solid currentColor; color:inherit; cursor:pointer; line-height:1;}
+            background:rgba(30,26,22,0.55); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px);
+            border:1px solid rgba(198,166,100,0.55); border-radius:2px; overflow:hidden; z-index:6;}
+  .langpill button{margin:0; padding:8px 17px; font-size:0.68rem; letter-spacing:0.16em;
+                   background:none; border:0; border-left:1px solid rgba(198,166,100,0.35);
+                   color:#FBF8F2; opacity:0.9; cursor:pointer; line-height:1; text-decoration:none;}
   .langpill button:first-child{border-left:0;}
-  .langpill button:hover{opacity:1;}
+  .langpill button:hover{opacity:1; background:rgba(198,166,100,0.22);}
   .langpill button.on{background:var(--gold); color:#1E1A16; opacity:1; text-decoration:none;}
+  .on-light .langpill{background:rgba(255,255,255,0.9); border-color:var(--line);}
+  .on-light .langpill button{color:var(--espresso); border-left-color:var(--line);}
   @media(max-width:1100px){ .langpill button{padding:6px 10px; font-size:0.6rem; letter-spacing:0.1em;} }
   @media(max-width:700px){ .langpill{position:static; transform:none; margin:0 auto;} }
   .lang button{
