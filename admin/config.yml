@@ -65,9 +65,17 @@ collections:
     extension: "md"
     format: "frontmatter"
     slug: "{{slug}}"
-    summary: "{{naslov}} — {{datum | date('DD.MM.YYYY')}}"
+    summary: "{{naslov}} · {{jezik}} — {{datum | date('DD.MM.YYYY')}}"
     sort_by: "datum"
     fields:
+      - label: "Jezik"
+        name: "jezik"
+        widget: "select"
+        default: "sr"
+        options:
+          - { label: "Srpski", value: "sr" }
+          - { label: "Mađarski", value: "hu" }
+      - { label: "Veza sa prevodom", name: "par", widget: "string", required: false, hint: "Isti tekst na oba jezika mora imati istu oznaku ovde — najlakše je upisati adresu srpske verzije, npr. 4c-dijamanta-objasnjeno-jednostavno" }
       - { label: "Naslov", name: "naslov", widget: "string", hint: "Naslov teksta — neka sadrži ključnu reč, npr. Kako izabrati verenički prsten" }
       - { label: "Datum objave", name: "datum", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss.SSS[Z]", date_format: "DD.MM.YYYY", time_format: false }
       - { label: "Naslovna slika", name: "slika", widget: "image", hint: "Vodoravna slika, najbolje 1600×900 px" }

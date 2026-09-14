@@ -62,9 +62,45 @@ function markdown(md) {
   return out.join('\n');
 }
 
-const MONTHS = ['januar','februar','mart','april','maj','jun','jul','avgust','septembar','oktobar','novembar','decembar'];
-function fmtDate(iso) { const d = new Date(iso); if (isNaN(d)) return ''; return `${d.getDate()}. ${MONTHS[d.getMonth()]} ${d.getFullYear()}.`; }
+function fmtDate(iso, lang) { const d = new Date(iso); if (isNaN(d)) return ''; const c = L[lang] || L.sr; return c.fmt(d, c.months); }
 function absImg(p) { if (!p) return ''; return p.startsWith('http') ? p : '/' + p.replace(/^\/+/, ''); }
+
+
+// ---------- jezici ----------
+const L = {
+  sr: {
+    htmlLang: 'sr', base: '/blog', dir: [],
+    nav: { kol: 'KOLEKCIJE', kam: 'DRAGO KAMENJE', blog: 'BLOG', kon: 'KONTAKT' },
+    eyebrow: 'Blog',
+    listTitle: 'Saveti i vodiči o dijamantima i dragom kamenju',
+    listLead: 'Kako se bira kamen, šta znače ocene na sertifikatu, koje zlato kome pristaje — sve što je dobro znati pre kupovine, iz zlatare koja to radi od 1994.',
+    listMeta: 'Blog — Oniks Diamonds & Gems',
+    listDesc: 'Saveti i vodiči o dijamantima, dragom kamenju, vereničkom prstenju i nakitu po meri. Zlatara Oniks, Subotica.',
+    more: 'PROČITAJ →', back: '← SVI TEKSTOVI', soon: 'Uskoro.',
+    ctaH: 'Napravite svoj prsten',
+    ctaP: 'Izaberite kamen, oblik brušenja i boju zlata i pogledajte kako bi izgledao. Ili nam se javite — izrada po meri traje oko mesec dana.',
+    ctaB1: 'Napravi svoj prsten', ctaB2: 'Kontakt',
+    foot: 'Isključivo prirodno kamenje', ime: 'SRPSKI',
+    months: ['januar','februar','mart','april','maj','jun','jul','avgust','septembar','oktobar','novembar','decembar'],
+    fmt: (d, m) => `${d.getDate()}. ${m[d.getMonth()]} ${d.getFullYear()}.`
+  },
+  hu: {
+    htmlLang: 'hu', base: '/blog/hu', dir: ['hu'],
+    nav: { kol: 'KOLLEKCIÓK', kam: 'DRÁGAKÖVEK', blog: 'BLOG', kon: 'KAPCSOLAT' },
+    eyebrow: 'Blog',
+    listTitle: 'Tanácsok és útmutatók gyémántokról és drágakövekről',
+    listLead: 'Hogyan válasszunk követ, mit jelentenek a tanúsítvány értékei, kinek melyik arany áll jól — minden, amit érdemes tudni a vásárlás előtt, egy ékszerüzlettől, amely 1994 óta ezzel foglalkozik.',
+    listMeta: 'Blog — Oniks Diamonds & Gems',
+    listDesc: 'Tanácsok és útmutatók gyémántokról, drágakövekről, eljegyzési gyűrűkről és egyedi ékszerekről. Oniks ékszerüzlet, Szabadka.',
+    more: 'OLVASÁS →', back: '← ÖSSZES CIKK', soon: 'Hamarosan.',
+    ctaH: 'Tervezze meg saját gyűrűjét',
+    ctaP: 'Válasszon követ, csiszolási formát és aranyszínt, és nézze meg, hogyan mutatna. Vagy keressen minket — az egyedi készítés körülbelül egy hónapot vesz igénybe.',
+    ctaB1: 'Tervezze meg a gyűrűjét', ctaB2: 'Kapcsolat',
+    foot: 'Kizárólag természetes kövek', ime: 'MAGYAR',
+    months: ['január','február','március','április','május','június','július','augusztus','szeptember','október','november','december'],
+    fmt: (d, m) => `${d.getFullYear()}. ${m[d.getMonth()]} ${d.getDate()}.`
+  }
+};
 
 // ---------- templates ----------
 const CSS = `
@@ -78,6 +114,11 @@ const CSS = `
   .brand-text{font-size:0.82rem;letter-spacing:0.24em;line-height:1;} .brand-text sup{font-size:0.52em;letter-spacing:0;margin-left:2px;vertical-align:super;opacity:.75;}
   nav{display:flex;gap:30px;font-size:0.72rem;letter-spacing:0.16em;color:var(--espresso-soft);flex-wrap:wrap;justify-content:flex-end;}
   nav a.on{color:var(--espresso);border-bottom:1px solid var(--gold);padding-bottom:3px;}
+  .langs{display:flex;border:1px solid var(--line);}
+  .langs a{padding:7px 14px;font-size:0.68rem;letter-spacing:0.16em;color:var(--espresso-soft);}
+  .langs a + a{border-left:1px solid var(--line);}
+  .langs a.on{background:var(--espresso);color:var(--cream);}
+  .langs a:not(.on):hover{color:var(--espresso);}
   .eyebrow{font-size:0.66rem;letter-spacing:0.22em;color:var(--gold-deep);text-transform:uppercase;}
   h1{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.15;margin-top:14px;}
   .lead{color:var(--espresso-soft);font-size:1.05rem;margin-top:18px;max-width:640px;}
@@ -107,15 +148,19 @@ const CSS = `
   footer{padding:40px 6vw;border-top:1px solid var(--line);font-size:0.68rem;color:var(--espresso-soft);display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;}
 `;
 
-function page({ title, desc, canonical, ogImage, body, active, jsonld }) {
+function page({ title, desc, canonical, ogImage, body, active, jsonld, lang = 'sr', alts = [], drugi = null }) {
+  const c = L[lang] || L.sr;
+  const drugiJezik = lang === 'sr' ? 'hu' : 'sr';
+  const drugiUrl = drugi === null ? `${L[drugiJezik].base}/` : drugi;
   return `<!DOCTYPE html>
-<html lang="sr">
+<html lang="${c.htmlLang}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${canonical}">
+${alts.map(a => `<link rel="alternate" hreflang="${a.lang}" href="${a.url}">`).join('\n')}
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -133,16 +178,20 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 <header>
   <a class="brand" href="/"><img src="/images/logo.png" alt="Oniks amblem"><span class="brand-text">ONIKS DIAMONDS &amp; GEMS<sup>™</sup></span></a>
   <nav>
-    <a href="/#kategorije">KOLEKCIJE</a>
-    <a href="/#kamenje">DRAGO KAMENJE</a>
-    <a href="/blog/" class="${active === 'blog' ? 'on' : ''}">BLOG</a>
-    <a href="/#poseta">KONTAKT</a>
+    <a href="/#kategorije">${c.nav.kol}</a>
+    <a href="/#kamenje">${c.nav.kam}</a>
+    <a href="${c.base}/" class="${active === 'blog' ? 'on' : ''}">${c.nav.blog}</a>
+    <a href="/#poseta">${c.nav.kon}</a>
+    <span class="langs">
+      <a href="${lang === 'sr' ? canonical : drugiUrl}" class="${lang === 'sr' ? 'on' : ''}">${L.sr.ime}</a>
+      <a href="${lang === 'hu' ? canonical : drugiUrl}" class="${lang === 'hu' ? 'on' : ''}">${L.hu.ime}</a>
+    </span>
   </nav>
 </header>
 ${body}
 <footer>
   <span>© ${new Date().getFullYear()} Oniks Diamonds &amp; Gems · Dimitrija Tucovića 5, Subotica</span>
-  <span>Isključivo prirodno kamenje</span>
+  <span>${c.foot}</span>
 </footer>
 </body>
 </html>`;
@@ -151,79 +200,99 @@ ${body}
 // ---------- build ----------
 fs.mkdirSync(OUT, { recursive: true });
 const files = fs.existsSync(SRC) ? fs.readdirSync(SRC).filter(f => f.endsWith('.md')) : [];
-const posts = files.map(f => {
+const svi = files.map(f => {
   const { data, body } = parseFrontmatter(fs.readFileSync(path.join(SRC, f), 'utf8'));
   const slug = f.replace(/\.md$/, '');
+  const jezik = (data.jezik || 'sr').toLowerCase();
   return {
-    slug, naslov: data.naslov || slug, datum: data.datum || '', slika: data.slika || '',
+    slug, jezik, par: data.par || slug,
+    naslov: data.naslov || slug, datum: data.datum || '', slika: data.slika || '',
     uvod: data.uvod || '', meta_opis: data.meta_opis || data.uvod || '', html: markdown(body)
   };
-}).filter(p => p.naslov).sort((a, b) => new Date(b.datum) - new Date(a.datum));
+}).filter(p => p.naslov && L[p.jezik]).sort((a, b) => new Date(b.datum) - new Date(a.datum));
 
-// post pages
-for (const p of posts) {
-  const url = `${SITE}/blog/${p.slug}/`;
-  const body = `
+// veze između prevoda istog teksta
+const parovi = {};
+for (const p of svi) (parovi[p.par] = parovi[p.par] || {})[p.jezik] = p;
+const altsZa = p => Object.entries(parovi[p.par] || {})
+  .map(([j, q]) => ({ lang: L[j].htmlLang, url: `${SITE}${L[j].base}/${q.slug}/` }));
+
+const sviUrlovi = [{ loc: SITE + '/', lastmod: new Date().toISOString().slice(0, 10), pri: '1.0' }];
+
+for (const jezik of Object.keys(L)) {
+  const c = L[jezik];
+  const posts = svi.filter(p => p.jezik === jezik);
+  const dirOut = path.join(OUT, ...c.dir);
+  fs.mkdirSync(dirOut, { recursive: true });
+
+  for (const p of posts) {
+    const url = `${SITE}${c.base}/${p.slug}/`;
+    const body = `
 <article>
-  <span class="eyebrow">Blog</span>
+  <span class="eyebrow">${c.eyebrow}</span>
   <h1>${esc(p.naslov)}</h1>
-  <div class="meta">${esc(fmtDate(p.datum)).toUpperCase()}</div>
+  <div class="meta">${esc(fmtDate(p.datum, jezik)).toUpperCase()}</div>
   ${p.slika ? `<div class="hero"><img src="${absImg(p.slika)}" alt="${esc(p.naslov)}"></div>` : ''}
   <div class="body">${p.html}</div>
   <div class="cta">
-    <h3>Napravite svoj prsten</h3>
-    <p>Izaberite kamen, oblik brušenja i boju zlata i pogledajte kako bi izgledao. Ili nam se javite — izrada po meri traje oko mesec dana.</p>
-    <a class="btn" href="/#kamenje">Napravi svoj prsten</a><a class="btn ghost" href="/#poseta">Kontakt</a>
+    <h3>${c.ctaH}</h3>
+    <p>${c.ctaP}</p>
+    <a class="btn" href="/#kamenje">${c.ctaB1}</a><a class="btn ghost" href="/#poseta">${c.ctaB2}</a>
   </div>
-  <a class="back" href="/blog/">← SVI TEKSTOVI</a>
+  <a class="back" href="${c.base}/">${c.back}</a>
 </article>`;
-  const jsonld = {
-    '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.naslov, description: p.meta_opis,
-    datePublished: p.datum, image: p.slika ? SITE + absImg(p.slika) : undefined, mainEntityOfPage: url,
-    author: { '@type': 'Organization', name: 'Oniks Diamonds & Gems' },
-    publisher: { '@type': 'Organization', name: 'Oniks Diamonds & Gems', logo: { '@type': 'ImageObject', url: SITE + '/images/logo.png' } }
-  };
-  fs.mkdirSync(path.join(OUT, p.slug), { recursive: true });
-  fs.writeFileSync(path.join(OUT, p.slug, 'index.html'),
-    page({ title: `${p.naslov} — Oniks Diamonds & Gems`, desc: p.meta_opis, canonical: url, ogImage: absImg(p.slika), body, active: 'blog', jsonld }));
-}
+    const jsonld = {
+      '@context': 'https://schema.org', '@type': 'BlogPosting', headline: p.naslov, description: p.meta_opis,
+      inLanguage: c.htmlLang, datePublished: p.datum, image: p.slika ? SITE + absImg(p.slika) : undefined,
+      mainEntityOfPage: url,
+      author: { '@type': 'Organization', name: 'Oniks Diamonds & Gems' },
+      publisher: { '@type': 'Organization', name: 'Oniks Diamonds & Gems', logo: { '@type': 'ImageObject', url: SITE + '/images/logo.png' } }
+    };
+    fs.mkdirSync(path.join(dirOut, p.slug), { recursive: true });
+    fs.writeFileSync(path.join(dirOut, p.slug, 'index.html'),
+      page({ title: `${p.naslov} — Oniks Diamonds & Gems`, desc: p.meta_opis, canonical: url,
+             ogImage: absImg(p.slika), body, active: 'blog', jsonld, lang: jezik, alts: altsZa(p),
+             drugi: (parovi[p.par] && parovi[p.par][jezik === 'sr' ? 'hu' : 'sr'])
+               ? `${L[jezik === 'sr' ? 'hu' : 'sr'].base}/${parovi[p.par][jezik === 'sr' ? 'hu' : 'sr'].slug}/`
+               : null }));
+    sviUrlovi.push({ loc: url, lastmod: (p.datum || '').slice(0, 10) || new Date().toISOString().slice(0, 10), pri: '0.6' });
+  }
 
-// list page
-const listBody = `
+  const listBody = `
 <div class="wrap">
   <div class="blog-head">
-    <span class="eyebrow">Blog</span>
-    <h1>Saveti i vodiči o dijamantima i dragom kamenju</h1>
-    <p class="lead">Kako se bira kamen, šta znače ocene na sertifikatu, koje zlato kome pristaje — sve što je dobro znati pre kupovine, iz zlatare koja to radi od 1994.</p>
+    <span class="eyebrow">${c.eyebrow}</span>
+    <h1>${c.listTitle}</h1>
+    <p class="lead">${c.listLead}</p>
   </div>
   <div class="posts">
     ${posts.map(p => `
-    <a class="post-card" href="/blog/${p.slug}/">
+    <a class="post-card" href="${c.base}/${p.slug}/">
       <div class="ph">${p.slika ? `<img src="${absImg(p.slika)}" alt="${esc(p.naslov)}" loading="lazy">` : ''}</div>
       <div class="tx">
-        <span class="dt">${esc(fmtDate(p.datum)).toUpperCase()}</span>
+        <span class="dt">${esc(fmtDate(p.datum, jezik)).toUpperCase()}</span>
         <h2>${esc(p.naslov)}</h2>
         <p>${esc(p.uvod)}</p>
-        <span class="more">PROČITAJ →</span>
+        <span class="more">${c.more}</span>
       </div>
     </a>`).join('')}
-    ${posts.length === 0 ? '<div class="post-card"><div class="tx"><p>Uskoro.</p></div></div>' : ''}
+    ${posts.length === 0 ? `<div class="post-card"><div class="tx"><p>${c.soon}</p></div></div>` : ''}
   </div>
 </div>`;
-fs.writeFileSync(path.join(OUT, 'index.html'),
-  page({ title: 'Blog — Oniks Diamonds & Gems', desc: 'Saveti i vodiči o dijamantima, dragom kamenju, vereničkom prstenju i nakitu po meri. Zlatara Oniks, Subotica.', canonical: `${SITE}/blog/`, ogImage: '', body: listBody, active: 'blog' }));
+  fs.writeFileSync(path.join(dirOut, 'index.html'),
+    page({ title: c.listMeta, desc: c.listDesc, canonical: `${SITE}${c.base}/`, ogImage: '',
+           body: listBody, active: 'blog', lang: jezik }));
+  sviUrlovi.push({ loc: `${SITE}${c.base}/`, lastmod: new Date().toISOString().slice(0, 10), pri: '0.7' });
 
-// posts.json for the homepage
-fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({
-  posts: posts.slice(0, 6).map(p => ({ slug: p.slug, naslov: p.naslov, datum: p.datum, slika: p.slika, uvod: p.uvod }))
-}, null, 2));
+  // posts.json za naslovnu (sr) i posts-hu.json za mađarski
+  const ime = jezik === 'sr' ? 'posts.json' : `posts-${jezik}.json`;
+  fs.writeFileSync(path.join(OUT, ime), JSON.stringify({
+    posts: posts.slice(0, 6).map(p => ({ slug: p.slug, naslov: p.naslov, datum: p.datum, slika: p.slika, uvod: p.uvod, url: `${c.base}/${p.slug}/` }))
+  }, null, 2));
 
-// sitemap
-const today = new Date().toISOString().slice(0, 10);
-const urls = [{ loc: SITE + '/', lastmod: today, pri: '1.0' }, { loc: SITE + '/blog/', lastmod: today, pri: '0.7' }]
-  .concat(posts.map(p => ({ loc: `${SITE}/blog/${p.slug}/`, lastmod: (p.datum || today).slice(0, 10), pri: '0.6' })));
+  console.log(`blog [${jezik}]: ${posts.length} tekst(ova)`);
+}
+
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  urls.map(u => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod><priority>${u.pri}</priority></url>`).join('\n') + `\n</urlset>\n`);
-
-console.log(`blog: ${posts.length} post(s) built`);
+  sviUrlovi.map(u => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod><priority>${u.pri}</priority></url>`).join('\n') + `\n</urlset>\n`);

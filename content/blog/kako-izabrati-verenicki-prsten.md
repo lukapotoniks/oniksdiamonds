@@ -1,4 +1,6 @@
 ---
+jezik: "sr"
+par: "kako-izabrati-verenicki-prsten"
 naslov: "Kako izabrati verenički prsten — vodič u 7 koraka"
 datum: 2026-09-08T09:00:00.000Z
 slika: "images/ring-blue-fabric.jpg"

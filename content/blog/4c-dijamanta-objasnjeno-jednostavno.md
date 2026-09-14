@@ -1,4 +1,6 @@
 ---
+jezik: "sr"
+par: "4c-dijamanta-objasnjeno-jednostavno"
 naslov: "4C dijamanta objašnjeno jednostavno"
 datum: 2026-09-07T09:00:00.000Z
 slika: "images/dijamant.jpg"

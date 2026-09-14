@@ -1,4 +1,6 @@
 ---
+jezik: "sr"
+par: "prirodni-ili-laboratorijski-dijamant"
 naslov: "Prirodni ili laboratorijski dijamant — u čemu je razlika"
 datum: 2026-09-06T09:00:00.000Z
 slika: "images/cluster-close.jpg"
