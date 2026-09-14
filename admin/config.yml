@@ -96,3 +96,5 @@ collections:
           - { label: "Telefon za linkove", name: "telefon_link", widget: "string", hint: "Format: +381621788052" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Radno vreme", name: "radno_vreme", widget: "text" }
+          - { label: "Instagram", name: "instagram", widget: "string", required: false, hint: "Ceo link do profila, npr. https://www.instagram.com/korisnicko_ime/ — ako ostane prazno, dugme se ne prikazuje" }
+          - { label: "Facebook", name: "facebook", widget: "string", required: false, hint: "Ceo link do stranice — ako ostane prazno, dugme se ne prikazuje" }

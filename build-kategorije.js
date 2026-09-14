@@ -55,15 +55,13 @@ const home = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 const homeCss = (home.match(/<style>([\s\S]*?)<\/style>/) || ['', ''])[1];
 const fonts = (home.match(/<link href="https:\/\/fonts\.googleapis\.com[^>]*>/) || [''])[0];
 
-// header + mobile panel from the homepage, with links made absolute and no language switcher
+// header + mobile panel from the homepage, links made absolute, language switcher kept
 let header = (home.match(/<header id="siteHeader">[\s\S]*?<\/header>\s*<div class="mobile-panel"[\s\S]*?<\/div>\n/) || [''])[0];
 header = header
   .replace(/href="#([a-z]+)"/g, 'href="/#$1"')
   .replace(/href="blog\/"/g, 'href="/blog/"')
   .replace(/href="([a-z-]+)\/"/g, 'href="/$1/"')
   .replace(/src="images\//g, 'src="/images/')
-  .replace(/<span class="lang" id="langBar">[\s\S]*?<\/span>\s*<\/span>/, '</span>')   // desktop lang
-  .replace(/<span class="lang" id="langBarM">[\s\S]*?<\/span>/, '')                     // mobile lang
   .replace('<header id="siteHeader">', '<header id="siteHeader" class="on-light">');
 
 const CSS = `
@@ -107,6 +105,81 @@ function card(p) {
   <div class="instore">Kupovina isključivo u radnji</div>
 </div>`;
 }
+
+
+// ---------- jezik (preuzet sa naslovne) ----------
+const I18N_SRC = (home.match(/const I18N = (\{[\s\S]*?\});\n/) || ['', '{}'])[1];
+const DOP = {
+  en: {
+    "Dijamantski verenički prstenovi u 14K zlatu — solitaire, halo i klaster modeli. Svaki kamen je prirodan i dolazi sa sertifikatom.": "Diamond engagement rings in 14K gold — solitaire, halo and cluster designs. Every stone is natural and comes with a certificate.",
+    "Prstenje sa dijamantima i dragim kamenjem — za svakodnevno nošenje i za posebne prilike.": "Rings with diamonds and gemstones — for everyday wear and for special occasions.",
+    "Minđuše sa dijamantima — od sitnih komada za svaki dan do onih koje se pamte.": "Earrings with diamonds — from small everyday pieces to ones that are remembered.",
+    "Privesci i ogrlice sa dijamantima, sa lančićem, u belom i žutom zlatu.": "Pendants and necklaces with diamonds, chain included, in white and yellow gold.",
+    "Narukvice sa dijamantima i dragim kamenjem u 14K zlatu.": "Bracelets with diamonds and gemstones in 14K gold.",
+    "komad u ponudi": "piece available", "komada u ponudi": "pieces available",
+    "Trenutno nema komada iz ove kategorije na sajtu. Izrađujemo ih po meri — javite nam se ili svratite u radnju.": "There are currently no pieces from this category on the site. We make them to order — get in touch or visit the shop.",
+    "Ne vidite baš ono što tražite?": "Not quite what you were looking for?",
+    "Bilo koji kamen, bilo koji oblik brušenja, vaš ili naš dizajn. Izrada po meri traje oko mesec dana od dogovora.": "Any stone, any cut, your design or ours. Made-to-order pieces take around a month from the agreement.",
+    "Napravite svoj prsten": "Design your ring",
+    "Ostale vrste nakita": "Other types of jewellery",
+    "Vrste nakita": "Jewellery types"
+  },
+  hu: {
+    "Dijamantski verenički prstenovi u 14K zlatu — solitaire, halo i klaster modeli. Svaki kamen je prirodan i dolazi sa sertifikatom.": "Gyémánt eljegyzési gyűrűk 14K aranyban — szoliter, halo és klaszter modellek. Minden kő természetes, és tanúsítvánnyal érkezik.",
+    "Prstenje sa dijamantima i dragim kamenjem — za svakodnevno nošenje i za posebne prilike.": "Gyűrűk gyémánttal és drágakővel — mindennapi viseletre és különleges alkalmakra.",
+    "Minđuše sa dijamantima — od sitnih komada za svaki dan do onih koje se pamte.": "Fülbevalók gyémánttal — az apró, mindennapi daraboktól az emlékezetesekig.",
+    "Privesci i ogrlice sa dijamantima, sa lančićem, u belom i žutom zlatu.": "Medálok és nyakláncok gyémánttal, lánccal együtt, fehér és sárga aranyban.",
+    "Narukvice sa dijamantima i dragim kamenjem u 14K zlatu.": "Karkötők gyémánttal és drágakővel 14K aranyban.",
+    "komad u ponudi": "darab elérhető", "komada u ponudi": "darab elérhető",
+    "Trenutno nema komada iz ove kategorije na sajtu. Izrađujemo ih po meri — javite nam se ili svratite u radnju.": "Ebből a kategóriából jelenleg nincs darab az oldalon. Egyedileg készítjük — keressen minket, vagy látogasson el az üzletbe.",
+    "Ne vidite baš ono što tražite?": "Nem egészen azt látja, amit keres?",
+    "Bilo koji kamen, bilo koji oblik brušenja, vaš ili naš dizajn. Izrada po meri traje oko mesec dana od dogovora.": "Bármilyen kő, bármilyen csiszolás, az Ön vagy a mi tervünk. Az egyedi készítés a megegyezéstől számítva körülbelül egy hónap.",
+    "Napravite svoj prsten": "Tervezze meg a gyűrűjét",
+    "Ostale vrste nakita": "Más ékszertípusok",
+    "Vrste nakita": "Ékszertípusok"
+  }
+};
+const LANG_JS = `
+  const I18N = ${I18N_SRC};
+  const DOP = ${JSON.stringify(DOP)};
+  for (const j of Object.keys(DOP)) Object.assign(I18N[j] = I18N[j] || {}, DOP[j]);
+  let LANG = 'sr';
+  const ORIG = new WeakMap();
+  function walkText(node, fn){
+    const w = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, { acceptNode(n){
+      const p = n.parentNode; if (!p) return NodeFilter.FILTER_REJECT;
+      const t = p.nodeName; if (t === 'SCRIPT' || t === 'STYLE') return NodeFilter.FILTER_REJECT;
+      return n.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+    }});
+    let n; while ((n = w.nextNode())) fn(n);
+  }
+  function applyLang(lang, root){
+    root = root || document.body;
+    const map = I18N[lang];
+    walkText(root, n => {
+      if (!ORIG.has(n)) ORIG.set(n, n.nodeValue);
+      const src = ORIG.get(n); const key = src.trim(); if (!key) return;
+      if (!map){ n.nodeValue = src; return; }
+      const hit = map[key]; if (hit) n.nodeValue = src.replace(key, hit);
+    });
+    document.documentElement.lang = lang || 'sr';
+    try { localStorage.setItem('oniks_lang', lang || 'sr'); } catch(e){}
+  }
+  function setLang(lang){
+    LANG = lang;
+    applyLang(lang === 'sr' ? null : lang);
+    document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.l === lang));
+  }
+  ['langBar','langBarM'].forEach(id => {
+    const bar = document.getElementById(id);
+    if (bar) bar.addEventListener('click', e => {
+      const b = e.target.closest('button'); if (!b) return;
+      setLang(b.dataset.l);
+      const p = document.getElementById('mobilePanel'); if (p) p.classList.remove('open');
+    });
+  });
+  try { const saved = localStorage.getItem('oniks_lang'); if (saved && saved !== 'sr') setLang(saved); } catch(e){}
+`;
 
 const TILE_IMG = { verenicko: '/images/uploads/vunterslauska.png', prstenje: '/images/sapphire-hand.jpg', mindjuse: '/images/earring-model.jpg', ogrlice: '/images/cross-pendant.jpg', narukvice: '/images/baguette-hand.jpg' };
 
@@ -219,7 +292,7 @@ ${header}
       <p class="eyebrow">Nakit</p>
       <h1>${esc(cat.name)}</h1>
       <p class="lead">${esc(cat.lead)}</p>
-      ${items.length ? `<p class="count">${count} u ponudi</p>` : ''}
+      ${items.length ? `<p class="count"><span>${items.length}</span> ${count.replace(/^\d+\s*/, '')} u ponudi</p>` : ''}
     </div>
     ${filters}
     ${items.length ? `<div class="prod-grid" id="prodGrid">${items.map(card).join('\n')}</div>`
@@ -261,7 +334,8 @@ ${header}
     </div>
   </div>
 </footer>
-<script>${JS}</script>
+<script>${JS}
+${LANG_JS}</script>
 </body>
 </html>`;
 }
