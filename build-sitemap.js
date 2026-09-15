@@ -27,6 +27,12 @@ const SKIP = new Set([
   '.netlify',
 ]);
 
+// Stranice koje postoje, ali privremeno ne treba da idu u pretragu.
+// Obriši red kad stranica dobije sadržaj — vraća se sama u sitemap.
+const EXCLUDE = new Set([
+  '/narukvice/',   // prazna dok ne uđe prva narukvica u CMS
+]);
+
 /**
  * Rekurzivno traži svaki folder koji sadrži index.html.
  * Vraća putanje oblika "blog/", "blog/hu/", "verenicko-prstenje/".
@@ -96,7 +102,10 @@ function escapeXml(str) {
 
 // --- glavni deo ---------------------------------------------------------
 
-const paths = ['/'].concat(findPages(ROOT).map((p) => '/' + p)).sort();
+const paths = ['/']
+  .concat(findPages(ROOT).map((p) => '/' + p))
+  .filter((p) => !EXCLUDE.has(p))
+  .sort();
 
 const blocks = paths.map((p) => {
   const loc = SITE + (p === '/' ? '/' : p);
