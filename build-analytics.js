@@ -6,11 +6,12 @@
  *   1. traku za pristanak na kolačiće (krem/zlatna, u duhu sajta)
  *   2. Google Analytics, ali SAMO ako je posetilac prihvatio
  *
- * Ako posetilac odbije, ne postavlja se nijedan kolačić i GA se ne učitava.
- * Izbor se pamti u pregledaču, pa se traka pojavljuje jednom.
+ * Verzija 2 — ispravke posle Lighthouse provere:
+ *   - traka ima pristupačno ime (aria-label), ranije je falilo
+ *   - dugmad su veća, zbog pravila o veličini dodirne površine
+ *   - tamniji ton na dugmetu "Odbijam", zbog kontrasta
  *
  * Pokreće se POSLE build-blog.js i build-kategorije.js.
- * Ako menjaš Analytics property, menja se samo GA_ID red ispod.
  */
 
 const fs = require('fs');
@@ -19,7 +20,6 @@ const path = require('path');
 const GA_ID = 'G-TT58LZBQX3';
 const ROOT = process.cwd();
 
-// Folderi koji se preskaču — /admin/ je Decap panel, njega ne merimo.
 const SKIP = new Set([
   'admin',
   'content',
@@ -30,7 +30,6 @@ const SKIP = new Set([
   '.netlify',
 ]);
 
-// Oznaka po kojoj skript prepoznaje da je stranica već obrađena.
 const MARKER = 'oniks-kolacici';
 
 const SNIPPET = `<!-- Oniks: kolačići + Google Analytics -->
@@ -49,12 +48,14 @@ const SNIPPET = `<!-- Oniks: kolačići + Google Analytics -->
   #${MARKER} .oniks-dugmad { display: flex; gap: .6rem; flex-shrink: 0; }
   #${MARKER} button {
     font: inherit; font-size: .78rem; letter-spacing: .06em; text-transform: uppercase;
-    padding: .6rem 1.4rem; border-radius: 2px; cursor: pointer;
+    min-height: 48px; padding: .75rem 1.6rem;
+    border-radius: 2px; cursor: pointer;
     border: 1px solid #B99A55; background: #B99A55; color: #fff;
     transition: opacity .2s;
   }
   #${MARKER} button:hover { opacity: .85; }
-  #${MARKER} button.oniks-odbij { background: transparent; color: #7A6F5C; border-color: #D8CEBB; }
+  #${MARKER} button:focus-visible { outline: 2px solid #3A342C; outline-offset: 2px; }
+  #${MARKER} button.oniks-odbij { background: transparent; color: #5E5648; border-color: #C9BCA3; }
   @media (max-width: 640px) {
     #${MARKER} { flex-direction: column; align-items: flex-start; gap: .9rem; }
     #${MARKER} .oniks-dugmad { width: 100%; }
@@ -68,16 +69,19 @@ const SNIPPET = `<!-- Oniks: kolačići + Google Analytics -->
 
   var TEKST = {
     sr: {
+      naslov: 'Obaveštenje o kolačićima',
       poruka: 'Koristimo kolačiće da bismo razumeli kako se sajt koristi i tako ga učinili boljim. Bez vaše saglasnosti ne postavljamo nijedan.',
       da: 'Prihvatam',
       ne: 'Odbijam'
     },
     hu: {
+      naslov: 'Tájékoztató a sütikről',
       poruka: 'Sütiket használunk, hogy megértsük az oldal használatát és jobbá tegyük. Az Ön hozzájárulása nélkül egyet sem helyezünk el.',
       da: 'Elfogadom',
       ne: 'Elutasítom'
     },
     en: {
+      naslov: 'Cookie notice',
       poruka: 'We use cookies to understand how the site is used and make it better. We set none without your consent.',
       da: 'Accept',
       ne: 'Decline'
@@ -109,6 +113,9 @@ const SNIPPET = `<!-- Oniks: kolačići + Google Analytics -->
     var traka = document.createElement('div');
     traka.id = KLJUC;
     traka.setAttribute('role', 'dialog');
+    traka.setAttribute('aria-label', t.naslov);
+    traka.setAttribute('aria-live', 'polite');
+
     traka.innerHTML =
       '<p></p><div class="oniks-dugmad">' +
       '<button class="oniks-odbij" type="button"></button>' +
@@ -141,7 +148,6 @@ const SNIPPET = `<!-- Oniks: kolačići + Google Analytics -->
 </script>
 `;
 
-/** Skuplja putanje do svih index.html fajlova. */
 function findHtml(dir) {
   const out = [];
   let entries;
