@@ -1,15 +1,11 @@
 ---
-jezik: sr
-par: toplota-i-drago-kamenje
-naslov: Toplota i drago kamenje — šta sme, a šta ne
+jezik: "sr"
+par: "toplota-i-drago-kamenje"
+naslov: "Toplota i drago kamenje — šta sme, a šta ne"
 datum: 2026-09-23T09:00:00.000Z
-slika: images/uploads/file_00000000874481f8b5ff09b6b974ab9a.png
-uvod: Zašto se neki kamenovi vade pre popravke, šta se dešava kod lemljenja,
-  kako da vam smaragd ne izbledi i zašto ametist ne voli sunce. Iz radionice, ne
-  iz knjige.
-meta_opis: "Kako toplota utiče na drago kamenje: popravke i lemljenje,
-  ultrazvučno čišćenje, sunce i izbledeli kamen. Šta sme, a šta ne, po vrstama
-  kamena."
+slika: "images/dijamant.jpg"
+uvod: "Zašto se neko kamenje vadi pre popravke, šta se dešava kod lemljenja, kako da vam smaragd ne izbledi i zašto ametist ne voli sunce. Iz radionice, ne iz knjige."
+meta_opis: "Kako toplota utiče na drago kamenje: popravke i lemljenje, ultrazvučno čišćenje, sunce i izbledeli kamen. Šta sme, a šta ne, po vrstama kamena."
 ---
 Najčešće oštećenje dragog kamena ne dolazi od udarca, nego od toplote. I skoro uvek se desi na mestu gde to niko ne očekuje — pri popravci, pri sužavanju prstena, pri čišćenju, ili prosto zato što je prsten ostao na prozoru.
 
@@ -21,7 +17,7 @@ Kad se prsten sužava, kad se pukla šina zalemi ili se zameni izgubljena kandž
 
 U radionici se tada donosi odluka: da li kamen ostaje ili se vadi. Pravilo je jednostavno — ako postoji imalo sumnje, kamen se vadi. Vađenje i ponovno postavljanje košta nešto više i traje duže, ali je jedina sigurna varijanta. Zlatar koji vam kaže da kamen mora da izađe ne pokušava da naplati više, nego vam čuva komad.
 
-Dijamant, safir i rubin uglavnom podnose kratko lokalno zagrevanje ako je rad daleko od kamena i ako se ne hladi naglo. Smaragd, ametist, tanzanit, opal, biser i mesečev kamen — nikada. Kod njih kamen izlazi pre nego što se plamen upali.
+Dijamant, safir i rubin uglavnom podnose kratko zagrevanje na jednom mestu ako je rad daleko od kamena i ako se ne hladi naglo. Smaragd, ametist, tanzanit, opal, biser i mesečev kamen — nikada. Kod njih kamen izlazi pre nego što se plamen upali.
 
 ## Naglo hlađenje je opasnije od samog zagrevanja
 

@@ -4,8 +4,8 @@ par: "4c-dijamanta-objasnjeno-jednostavno"
 naslov: "4C dijamanta objašnjeno jednostavno"
 datum: 2026-09-07T09:00:00.000Z
 slika: "images/dijamant.jpg"
-uvod: "Karat, čistoća, boja i brušenje — četiri merila po kojima se svaki dijamant ocenjuje i naplaćuje. Šta koje od njih znači i gde se isplati uštedeti."
-meta_opis: "Šta znače 4C dijamanta: karat, čistoća (clarity), boja (color) i brušenje (cut). Jednostavno objašnjenje i saveti gde uštedeti, a gde ne."
+uvod: "Karat, čistoća, boja i brušenje — četiri merila po kojima se svaki dijamant ocenjuje i naplaćuje. Šta koje od njih znači i gde se isplati štedeti."
+meta_opis: "Šta znače 4C dijamanta: karat, čistoća (clarity), boja (color) i brušenje (cut). Jednostavno objašnjenje i saveti gde štedeti, a gde ne."
 ---
 Svaki dijamant na svetu ocenjuje se po istim četiri merila, koja na engleskom sva počinju slovom C: **Carat** (karat), **Clarity** (čistoća), **Color** (boja) i **Cut** (brušenje). Sistem je uveo Gemološki institut Amerike (GIA) sredinom prošlog veka i danas ga koriste sve laboratorije. Kad razumete šta koja ocena znači, sertifikat prestaje da bude tabela šifara i postaje alat za pametnu kupovinu.
 
@@ -16,7 +16,7 @@ Karat je jedinica mase: jedan karat je 0,2 grama. Kamen od 0,50 ct je "pola kara
 Dve stvari koje ljudi često pogrešno razumeju:
 
 - Karat govori o masi, ne o prečniku. Dva dijamanta od po jednog karata mogu imati različit prečnik ako je jedan brušen dublje. Zato uvek pitajte i za dimenzije u milimetrima.
-- Cena ne raste linearno. Dijamant od 1,00 ct košta znatno više nego dva od 0,50 ct, jer su veći kamenovi ređi. Isto važi i za "psihološke" granice: 0,90 ct je vidno jeftiniji od 1,00 ct, a razlika u veličini je jedva primetna.
+- Cena ne raste linearno. Dijamant od 1,00 ct košta znatno više nego dva od 0,50 ct, jer je veće kamenje ređe. Isto važi i za "psihološke" granice: 0,90 ct je vidno jeftiniji od 1,00 ct, a razlika u veličini je jedva primetna.
 
 ## Čistoća — koliko je kamen "čist" iznutra
 
@@ -28,7 +28,7 @@ Gotovo svaki prirodni dijamant ima sitne tragove nastanka — mikroskopske krist
 - **SI1 / SI2** — uključci koje pod lupom lako vidite, golim okom uglavnom ne
 - **I1 – I3** — uključci vidljivi golim okom
 
-Gde se isplati uštedeti: **VS2 je granica "čisto oku"**. Sve iznad toga plaćate za nešto što nećete videti bez lupe. SI1 može biti odličan izbor ako je uključak na ivici kamena, gde ga kandža prstena prekrije — ali to treba proveriti na konkretnom kamenu.
+Gde se isplati štedeti: **VS2 je granica onoga što se vidi golim okom**. Sve iznad toga plaćate za nešto što nećete videti bez lupe. SI1 može biti odličan izbor ako je uključak na ivici kamena, gde ga kandža prstena prekrije — ali to treba proveriti na konkretnom kamenu.
 
 ## Boja — zapravo odsustvo boje
 
@@ -38,7 +38,7 @@ Ocena boje meri koliko je dijamant bezbojan. Skala ide od D (potpuno bezbojan) d
 - **G, H, I, J** — skoro bezbojni; u prstenu izgledaju belo
 - **K i dalje** — blago topla nijansa, vidljiva pored belog kamena
 
-Gde se isplati uštedeti: **G ili H boja u prstenu izgleda isto kao D**, naročito u žutom ili roze zlatu koje kamenu ionako daje topliju nijansu. Razlika u ceni između D i G može biti i 30–40%. Za belo zlato ili platinu ostanite u rasponu D–H.
+Gde se isplati štedeti: **G ili H boja u prstenu izgleda isto kao D**, naročito u žutom ili roze zlatu koje kamenu ionako daje topliju nijansu. Razlika u ceni između D i G može biti i 30–40%. Za belo zlato ili platinu ostanite u rasponu D–H.
 
 ## Brušenje — jedino što čini čovek
 
@@ -50,7 +50,7 @@ Napomena: zvanična ocena brušenja postoji samo za okrugli brilijant. Za ostale
 
 ## Peto "C" koje se ne piše — sertifikat
 
-Četiri merila vrede samo ako ih je ocenila nezavisna laboratorija. Najpouzdaniji sertifikati su **GIA**, **IGI** i **HRD**. Sertifikat koji izdaje sam prodavac nije nezavisna ocena. Kod sertifikovanih kamena broj sertifikata je često lasersko ugraviran na ivicu kamena, pa se može proveriti pod lupom.
+Četiri merila vrede samo ako ih je ocenila nezavisna laboratorija. Najpouzdaniji sertifikati su **GIA**, **IGI** i **HRD**. Sertifikat koji izdaje sam prodavac nije nezavisna ocena. Kod sertifikovanog kamenja broj sertifikata je često lasersko ugraviran na ivicu kamena, pa se može proveriti pod lupom.
 
 ## Kako sve to primeniti
 

@@ -11,9 +11,9 @@ Kad neko uđe u radnju i kaže „hteo bih safir", prvo pitanje koje mu postavim
 
 ## Odakle kamenu boja
 
-Većina dragih kamenova je u svojoj čistoj hemijskoj formi bezbojna. Boju im daju tragovi drugih elemenata koji su se našli u kristalu dok je nastajao, milionima godina pod zemljom.
+Većina dragog kamenja je u svojoj čistoj hemijskoj formi bezbojna. Boju im daju tragovi drugih elemenata koji su se našli u kristalu dok je nastajao, milionima godina pod zemljom.
 
-Hrom je jedan od najvažnijih. U korundu daje crvenu, i tada kamen zovemo rubin. U berilu daje zelenu, i tada ga zovemo smaragd. Ista primesa, dva različita kamena, dve boje koje su jedne od najskupljih na svetu.
+Hrom je jedan od najvažnijih. U korundu daje crvenu, i tada kamen zovemo rubin. U berilu daje zelenu, i tada ga zovemo smaragd. Ista primesa, dva različita kamena, dve boje koje spadaju među najskuplje na svetu.
 
 Gvožđe i titan zajedno daju plavu safiru. Odnos ta dva elementa, i to koliko ih ima, odlučuje da li će safir biti svetao kao nebo u podne ili tamno plav kao kasno veče. Gvožđe samo za sebe daje žutu i zelenu, a ako se umeša još i malo hroma, dobija se retka narandžasto-roze nijansa koju zovemo padparadža.
 
@@ -25,7 +25,7 @@ Kad opisujemo boju kamena, gledamo tri stvari.
 
 Prva je sama boja, ono što bismo laički rekli: plava, zelena, crvena. Druga je ton, koliko je kamen svetao ili taman. Treća je zasićenost, koliko je boja živa ili bleda, čista ili sa primesom sive i braon.
 
-Najskuplji kamenovi su oni sa srednjim tonom i visokom zasićenošću. Kamen koji je pretaman gubi sjaj, jer svetlost ne uspeva da prođe kroz njega. Kamen koji je previše svetao izgleda vodnjikavo. Kamen sa sivim primesama deluje mutno čak i kad je savršeno čist. Ono što tražimo je boja koja se vidi iz daljine i koja ne bledi kad ga sklonite sa jakog svetla.
+Najskuplje je kamenje sa srednjim tonom i visokom zasićenošću. Kamen koji je pretaman gubi sjaj, jer svetlost ne uspeva da prođe kroz njega. Kamen koji je previše svetao izgleda vodnjikavo. Kamen sa sivim primesama deluje mutno čak i kad je savršeno čist. Ono što tražimo je boja koja se vidi iz daljine i koja ne bledi kad kamen sklonite sa jakog svetla.
 
 ## Zašto dve nijanse mogu da koštaju potpuno različito
 
@@ -47,7 +47,7 @@ Gledajte kamen na dnevnom svetlu, ne samo pod lampom u radnji. Lampe su podešen
 
 Probajte ga uz svoju kožu. Isti kamen na svetlijoj i tamnijoj koži izgleda drugačije, i ono što je na jastučiću delovalo pretamno na ruci može da bude tačno kako treba.
 
-Razmislite o zlatu. Žuto zlato greje nijansu i prija toplim kamenovima, belo zlato je hladnije i ističe plave i zelene tonove, roze zlato ide uz sve ono što ima roze i ljubičaste prizvuke. U našem konfiguratoru možete da probate isti kamen u sve tri boje zlata pre nego što odlučite.
+Razmislite o zlatu. Žuto zlato greje nijansu i prija toplom kamenju, belo zlato je hladnije i ističe plave i zelene tonove, roze zlato ide uz sve ono što ima roze i ljubičaste prizvuke. U našem konfiguratoru možete da probate isti kamen u sve tri boje zlata pre nego što odlučite.
 
 I na kraju, nemojte se držati samo one nijanse za koju ste čuli da je najskuplja. Najskuplja nijansa je ona koju tržište najviše traži. Vaša nijansa je ona koju ćete gledati svaki dan i koja vam se sviđa. Te dve se ne moraju poklapati, i to je sasvim u redu.
 

@@ -50,9 +50,9 @@ Najsigurnije je da veličinu izmeri zlatar. Ako je verenica iznenađenje, možet
 
 ## 7. Sertifikat i garancija
 
-Za dijamant tražite sertifikat nezavisne laboratorije (GIA, IGI ili HRD) koji potvrđuje karataju, boju, čistoću i brušenje. Za obojeno kamenje tražite potvrdu da je kamen prirodan, a ne sintetički. Ozbiljna zlatara će vam uz prsten dati i sopstveni sertifikat autentičnosti sa svim podacima o komadu.
+Za dijamant tražite sertifikat nezavisne laboratorije (GIA, IGI ili HRD) koji potvrđuje karatnu težinu, boju, čistoću i brušenje. Za obojeno kamenje tražite potvrdu da je kamen prirodan, a ne sintetički. Ozbiljna zlatara će vam uz prsten dati i sopstveni sertifikat autentičnosti sa svim podacima o komadu.
 
-U zlatari Oniks svi kamenovi koje ugrađujemo su prirodnog porekla i svaki komad dolazi sa sertifikatom. Ako želite prsten po svojoj zamisli, [izrada po meri](/#poseta) traje oko mesec dana od dogovora.
+U zlatari Oniks sve kamenje koje ugrađujemo je prirodnog porekla i svaki komad dolazi sa sertifikatom. Ako želite prsten po svojoj zamisli, [izrada po meri](/#poseta) traje oko mesec dana od dogovora.
 
 ## Najčešća pitanja
 

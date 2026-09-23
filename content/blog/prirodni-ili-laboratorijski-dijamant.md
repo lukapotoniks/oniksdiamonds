@@ -30,7 +30,7 @@ Golim okom, pa ni pod običnom lupom, laboratorijski dijamant se ne razlikuje od
 
 **Retkost.** Prirodni dijamant je konačan resurs — svaki je nastao pre milijardi godina i više ih ne nastaje. Laboratorijski se proizvodi u neograničenim količinama, u fabrici, po narudžbini.
 
-**Vrednost tokom vremena.** Ovo je ključna razlika. Prirodni dijamant zadržava vrednost: može se preprodati, zameniti, ostaviti u nasleđe, a veći i ređi kamenovi tokom decenija i dobijaju na ceni. Laboratorijski dijamant nema preprodajnu vrednost koja bi se ozbiljno mogla računati — cena mu pada sa svakim novim padom troškova proizvodnje, a kupaca za polovan laboratorijski kamen praktično nema.
+**Vrednost tokom vremena.** Ovo je ključna razlika. Prirodni dijamant zadržava vrednost: može se preprodati, zameniti, ostaviti u nasleđe, a veće i ređe kamenje tokom decenija i dobija na ceni. Laboratorijski dijamant nema preprodajnu vrednost koja bi se ozbiljno mogla računati — cena mu pada sa svakim novim padom troškova proizvodnje, a kupaca za polovan laboratorijski kamen praktično nema.
 
 **Sertifikat.** Laboratorije (GIA, IGI) izdaju sertifikate i za laboratorijske dijamante, ali sa jasnom oznakom "Laboratory-Grown". Poštena radnja će vam to reći i napisati bez pitanja.
 
