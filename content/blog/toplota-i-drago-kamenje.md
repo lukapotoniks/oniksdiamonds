@@ -3,7 +3,7 @@ jezik: sr
 par: toplota-i-drago-kamenje
 naslov: Toplota i drago kamenje — šta sme, a šta ne
 datum: 2026-09-23T09:00:00.000Z
-slika: images/uploads/chatgpt-image-sep-11-2026-01_01_39-am.png
+slika: images/uploads/file_00000000874481f8b5ff09b6b974ab9a.png
 uvod: Zašto se neki kamenovi vade pre popravke, šta se dešava kod lemljenja,
   kako da vam smaragd ne izbledi i zašto ametist ne voli sunce. Iz radionice, ne
   iz knjige.
