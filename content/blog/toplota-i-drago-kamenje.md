@@ -1,19 +1,17 @@
 ---
-jezik: sr
-par: toplota-i-drago-kamenje
-naslov: Toplota i drago kamenje — šta sme, a šta ne
+jezik: "sr"
+par: "toplota-i-drago-kamenje"
+naslov: "Toplota i drago kamenje — šta sme, a šta ne"
 datum: 2026-09-23T09:00:00.000Z
-slika: images/uploads/dta07444.jpg
-uvod: Zašto se neko kamenje vadi pre popravke, šta se dešava kod lemljenja, kako
-  da vam smaragd ne izbledi i zašto ametist ne voli sunce. Iz radionice, ne iz
-  knjige.
-meta_opis: "Kako toplota utiče na drago kamenje: popravke i lemljenje,
-  ultrazvučno čišćenje, sunce i izbledeli kamen. Šta sme, a šta ne, po vrstama
-  kamena."
+slika: "images/dijamant.jpg"
+uvod: "Zašto se neko kamenje vadi pre popravke, šta se dešava kod lemljenja, kako da vam smaragd ne izbledi i zašto ametist ne voli sunce. Iz radionice, ne iz knjige."
+meta_opis: "Kako toplota utiče na drago kamenje: popravke i lemljenje, ultrazvučno čišćenje, sunce i izbledeli kamen. Šta sme, a šta ne, po vrstama kamena."
 ---
-Najčešće oštećenje dragog kamena ne dolazi od udarca, nego od toplote. I skoro uvek se desi na mestu gde to niko ne očekuje — pri popravci, pri sužavanju prstena, pri čišćenju, ili prosto zato što je prsten ostao na prozoru.
+Najviše oštećenja na nakitu dolazi od udaraca i svakodnevnog habanja — to je jasno svakome ko nosi prsten. Ali postoji i druga vrsta štete, ređa a skuplja, koja se dešava tiho i gotovo uvek se mogla izbeći: ona od toplote.
 
-Evo šta se stvarno dešava i kako se to izbegava.
+Ta šteta nastaje tamo gde je niko ne očekuje — pri popravci i lemljenju, pri sužavanju prstena, u ultrazvučnoj kadi, ili prosto zato što je prsten ostao na prozoru preko leta. Za razliku od udarca, koji je nesreća, ovo je stvar postupka i znanja.
+
+Evo šta se stvarno dešava i kako se izbegava.
 
 ## Popravka i lemljenje — gde nastaje najviše štete
 

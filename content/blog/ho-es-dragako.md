@@ -7,7 +7,9 @@ slika: "images/dijamant.jpg"
 uvod: "Miért veszik ki a követ javítás előtt, mi történik forrasztáskor, hogyan ne fakuljon ki a smaragd, és miért nem szereti az ametiszt a napot. A műhelyből, nem a könyvből."
 meta_opis: "Hogyan hat a hő a drágakövekre: javítás és forrasztás, ultrahangos tisztítás, napfény és kifakult kő. Mit bír el melyik kő, és mit nem."
 ---
-A drágakövek leggyakoribb sérülése nem ütéstől származik, hanem hőtől. És majdnem mindig ott történik, ahol senki sem számít rá — javításkor, gyűrű szűkítésekor, tisztításkor, vagy egyszerűen azért, mert a gyűrű az ablakpárkányon maradt.
+Az ékszerek sérüléseinek nagy része ütésből és mindennapi kopásból ered — ezt mindenki tudja, aki gyűrűt hord. Van azonban egy másik fajta kár is, ritkább, de drágább, amely csendben történik, és szinte mindig elkerülhető lett volna: a hő okozta.
+
+Ez ott keletkezik, ahol senki sem számít rá — javításkor és forrasztáskor, gyűrű szűkítésekor, az ultrahangos kádban, vagy egyszerűen azért, mert a gyűrű nyáron az ablakpárkányon maradt. Az ütéssel ellentétben, amely baleset, ez eljárás és tudás kérdése.
 
 Íme, mi történik valójában, és hogyan kerülhető el.
 
