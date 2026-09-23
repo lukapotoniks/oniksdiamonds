@@ -1,11 +1,15 @@
 ---
-jezik: "sr"
-par: "toplota-i-drago-kamenje"
-naslov: "Toplota i drago kamenje — šta sme, a šta ne"
+jezik: sr
+par: toplota-i-drago-kamenje
+naslov: Toplota i drago kamenje — šta sme, a šta ne
 datum: 2026-09-23T09:00:00.000Z
-slika: "images/dijamant.jpg"
-uvod: "Zašto se neko kamenje vadi pre popravke, šta se dešava kod lemljenja, kako da vam smaragd ne izbledi i zašto ametist ne voli sunce. Iz radionice, ne iz knjige."
-meta_opis: "Kako toplota utiče na drago kamenje: popravke i lemljenje, ultrazvučno čišćenje, sunce i izbledeli kamen. Šta sme, a šta ne, po vrstama kamena."
+slika: images/uploads/dta07444.jpg
+uvod: Zašto se neko kamenje vadi pre popravke, šta se dešava kod lemljenja, kako
+  da vam smaragd ne izbledi i zašto ametist ne voli sunce. Iz radionice, ne iz
+  knjige.
+meta_opis: "Kako toplota utiče na drago kamenje: popravke i lemljenje,
+  ultrazvučno čišćenje, sunce i izbledeli kamen. Šta sme, a šta ne, po vrstama
+  kamena."
 ---
 Najčešće oštećenje dragog kamena ne dolazi od udarca, nego od toplote. I skoro uvek se desi na mestu gde to niko ne očekuje — pri popravci, pri sužavanju prstena, pri čišćenju, ili prosto zato što je prsten ostao na prozoru.
 
