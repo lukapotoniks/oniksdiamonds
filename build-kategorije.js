@@ -248,7 +248,6 @@ function page(cat, items) {
         ${presentCols.map(s => `<button data-col="${esc(s)}">${esc(nameOf(s).toUpperCase())}</button>`).join('')}
       </div>
     </div>` : '';
-  const count = items.length === 1 ? '1 komad' : (items.length % 10 >= 2 && items.length % 10 <= 4 && !(items.length % 100 >= 12 && items.length % 100 <= 14)) ? `${items.length} komada` : `${items.length} komada`;
   const jsonld = {
     '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${cat.name} — Oniks Diamonds & Gems`, url,
     mainEntity: { '@type': 'ItemList', itemListElement: items.map((p, i) => {
@@ -292,7 +291,6 @@ ${header}
       <p class="eyebrow">Nakit</p>
       <h1>${esc(cat.name)}</h1>
       <p class="lead">${esc(cat.lead)}</p>
-      ${items.length ? `<p class="count"><span>${items.length}</span> ${count.replace(/^\d+\s*/, '')} u ponudi</p>` : ''}
     </div>
     ${filters}
     ${items.length ? `<div class="prod-grid" id="prodGrid">${items.map(card).join('\n')}</div>`
@@ -329,8 +327,8 @@ ${header}
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© ${new Date().getFullYear()} Oniks Diamonds &amp; Gems · Dimitrija Tucovića 5, Subotica · Isključivo prirodno kamenje</span>
-      <span>062 178 8052</span>
+      <span>© ${new Date().getFullYear()} Oniks Diamonds &amp; Gems · Dimitrija Tucovića 5, Subotica</span>
+      <span>+381 62 178 8052</span>
     </div>
   </div>
 </footer>

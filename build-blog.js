@@ -80,7 +80,7 @@ const L = {
     ctaH: 'Napravite svoj prsten',
     ctaP: 'Izaberite kamen, oblik brušenja i boju zlata i pogledajte kako bi izgledao. Ili nam se javite — izrada po meri traje oko mesec dana.',
     ctaB1: 'Napravi svoj prsten', ctaB2: 'Kontakt',
-    foot: 'Isključivo prirodno kamenje', ime: 'SRPSKI',
+    ime: 'SRPSKI',
     months: ['januar','februar','mart','april','maj','jun','jul','avgust','septembar','oktobar','novembar','decembar'],
     fmt: (d, m) => `${d.getDate()}. ${m[d.getMonth()]} ${d.getFullYear()}.`
   },
@@ -96,7 +96,7 @@ const L = {
     ctaH: 'Tervezze meg saját gyűrűjét',
     ctaP: 'Válasszon követ, csiszolási formát és aranyszínt, és nézze meg, hogyan mutatna. Vagy keressen minket — az egyedi készítés körülbelül egy hónapot vesz igénybe.',
     ctaB1: 'Tervezze meg a gyűrűjét', ctaB2: 'Kapcsolat',
-    foot: 'Kizárólag természetes kövek', ime: 'MAGYAR',
+    ime: 'MAGYAR',
     months: ['január','február','március','április','május','június','július','augusztus','szeptember','október','november','december'],
     fmt: (d, m) => `${d.getFullYear()}. ${m[d.getMonth()]} ${d.getDate()}.`
   }
@@ -193,7 +193,6 @@ ${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script
 ${body}
 <footer>
   <span>© ${new Date().getFullYear()} Oniks Diamonds &amp; Gems · Dimitrija Tucovića 5, Subotica</span>
-  <span>${c.foot}</span>
 </footer>
 </body>
 </html>`;
