@@ -1,11 +1,15 @@
 ---
-jezik: "sr"
-par: "kada-skinuti-prsten"
-naslov: "Nakit nije neuništiv — pet situacija kada je bolje skinuti prsten"
+jezik: sr
+par: kada-skinuti-prsten
+naslov: Nakit nije neuništiv — pet situacija kada je bolje skinuti prsten
 datum: 2026-10-08T09:00:00.000Z
-slika: "images/ring-blue-fabric.jpg"
-uvod: "Kamen je nastajao milionima godina, pa ljudi misle da mu se ništa ne može. Evo pet svakodnevnih situacija u kojima se najčešće ošteti nakit i u kojima je lakše skinuti prsten nego ga posle popravljati."
-meta_opis: "Kada skinuti prsten: roštilj i pećnica, bazen i hlor, more i pesak, teretana, kućna hemija. Praktični saveti za održavanje nakita sa dragim kamenjem."
+slika: images/uploads/file_00000000f0a08210bebf51c31d2c011c.png
+uvod: Kamen je nastajao milionima godina, pa ljudi misle da mu se ništa ne može.
+  Evo pet svakodnevnih situacija u kojima se najčešće ošteti nakit i u kojima je
+  lakše skinuti prsten nego ga posle popravljati.
+meta_opis: "Kada skinuti prsten: roštilj i pećnica, bazen i hlor, more i pesak,
+  teretana, kućna hemija. Praktični saveti za održavanje nakita sa dragim
+  kamenjem."
 ---
 Prsten se obično ne skida. Stavi se i zaboravi, i to je u redu — zato se i nosi. Ali vredi imati u glavi nekoliko situacija u kojima je bolje da završi u džepu ili na stolu, jer su to mesta na kojima nam ljudi najčešće donose nakit na popravku.
 
