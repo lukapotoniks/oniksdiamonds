@@ -12,7 +12,7 @@ meta_opis: "Kada skinuti prsten: roštilj i pećnica, bazen i hlor, more i pesak
   kamenjem."
 ---
 Prsten se obično ne skida. Stavi se i zaboravi, i to je u redu — zato se i nosi. Ali vredi imati u glavi nekoliko situacija u kojima je bolje da završi u džepu ili na stolu. Iz iskustva znamo da upravo zbog njih ljudi najčešće donose nakit na popravku.
-Ne radi se o strahu od nakita. Radi se o sekundi razmišljanja, onoj koja zvuči kao „čekaj, idem na roštilj, da skinem prsten".
+Ne radi se o strahu od nakita. Radi se o sekundi razmišljanja, onoj koja zvuči kao „čekaj, prvo da skinem prsten, pa onda čistim kupatilo".
 
 ## 1. Roštilj, pećnica, sauna
 
