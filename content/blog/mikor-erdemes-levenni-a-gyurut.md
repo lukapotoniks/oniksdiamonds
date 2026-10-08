@@ -8,7 +8,7 @@ uvod: "A kő évmilliókon át keletkezett, ezért az emberek azt hiszik, semmi 
 meta_opis: "Mikor vegyük le a gyűrűt: grill és sütő, uszoda és klór, tenger és homok, edzőterem, háztartási vegyszerek. Gyakorlati tanácsok drágaköves ékszerek ápolásához."
 ---
 A gyűrűt általában nem vesszük le. Felkerül, és elfelejtjük — és ez rendben is van, hiszen ezért hordjuk. Érdemes azonban észben tartani néhány helyzetet, amikor jobb, ha a zsebben vagy az asztalon landol. Tapasztalatból tudjuk, hogy a legtöbb ékszer éppen ezek miatt kerül hozzánk javításra.
-Nem a félelemről szól. Egy másodperc gondolkodásról, amely így hangzik: „várj csak, grillezni megyek, leveszem a gyűrűt".
+Nem a félelemről szól. Egy másodperc gondolkodásról, amely így hangzik: „várj csak, előbb leveszem a gyűrűt, aztán takarítom a fürdőszobát".
 
 ## 1. Grill, sütő, szauna
 
