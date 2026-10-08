@@ -3,7 +3,7 @@ jezik: sr
 par: kada-skinuti-prsten
 naslov: Nakit nije neuništiv — pet situacija kada je bolje skinuti prsten
 datum: 2026-10-08T09:00:00.000Z
-slika: images/uploads/file_00000000f0a08210bebf51c31d2c011c.png
+slika: images/uploads/dpvs2s.jpg
 uvod: Kamen je nastajao milionima godina, pa ljudi misle da mu se ništa ne može.
   Evo pet svakodnevnih situacija u kojima se najčešće ošteti nakit i u kojima je
   lakše skinuti prsten nego ga posle popravljati.
