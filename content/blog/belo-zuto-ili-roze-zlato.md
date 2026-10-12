@@ -1,11 +1,14 @@
 ---
-jezik: "sr"
-par: "belo-zuto-ili-roze-zlato"
-naslov: "Belo, žuto ili roze zlato — kako izabrati"
+jezik: sr
+par: belo-zuto-ili-roze-zlato
+naslov: Belo, žuto ili roze zlato — kako izabrati
 datum: 2026-10-07T09:00:00.000Z
-slika: "images/cluster-close.jpg"
-uvod: "Sva tri su 14 karata i u sva tri ima isto zlata. Razlika je u boji, u tome kako se ponašaju u nošenju i u održavanju. Evo šta treba znati pre nego što izaberete."
-meta_opis: "Razlika između belog, žutog i roze zlata: zašto belo zlato treba rodinirati, koja boja kome stoji i kako boja zlata menja izgled kamena."
+slika: images/uploads/yellow-rose-and-white-gold.png
+uvod: Sva tri su 14 karata i u sva tri ima isto zlata. Razlika je u boji, u tome
+  kako se ponašaju u nošenju i u održavanju. Evo šta treba znati pre nego što
+  izaberete.
+meta_opis: "Razlika između belog, žutog i roze zlata: zašto belo zlato treba
+  rodinirati, koja boja kome stoji i kako boja zlata menja izgled kamena."
 ---
 Ovo pitanje u radnji dobijamo češće od svih ostalih. Odgovor nije samo stvar ukusa — tri boje se u nošenju ponašaju različito, i vredi to znati unapred.
 
