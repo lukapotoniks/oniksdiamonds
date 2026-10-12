@@ -1,75 +1,75 @@
 ---
-jezik: sr
-par: belo-zuto-ili-roze-zlato
-naslov: Belo, žuto ili roze zlato — kako izabrati i šta ih stvarno razlikuje
-datum: 2026-10-12T00:00:00.000Z
-slika: images/uploads/yellow-rose-and-white-gold.png
-uvod: Sva tri su 14 karata i sva tri imaju istu količinu zlata. Razlika je u
-  onome što je dodato, a to menja boju, izdržljivost i održavanje. Kako da
-  izaberete onu koja vam stoji.
-meta_opis: "Razlika između belog, žutog i roze zlata: sastav legure,
-  rodiniranje, izdržljivost, održavanje i koja boja kome pristaje. Saveti
-  zlatare Oniks, Subotica."
+jezik: "sr"
+par: "belo-zuto-ili-roze-zlato"
+naslov: "Belo, žuto ili roze zlato — kako izabrati"
+datum: 2026-10-07T09:00:00.000Z
+slika: "images/cluster-close.jpg"
+uvod: "Sva tri su 14 karata i u sva tri ima isto zlata. Razlika je u boji, u tome kako se ponašaju u nošenju i u održavanju. Evo šta treba znati pre nego što izaberete."
+meta_opis: "Razlika između belog, žutog i roze zlata: zašto belo zlato treba rodinirati, koja boja kome stoji i kako boja zlata menja izgled kamena."
 ---
-Ovo je pitanje koje u radnji dobijamo češće od svih drugih. Odgovor nije stvar ukusa samo — tri boje se ponašaju različito u nošenju, i vredi to znati pre nego što izaberete.
+Ovo pitanje u radnji dobijamo češće od svih ostalih. Odgovor nije samo stvar ukusa — tri boje se u nošenju ponašaju različito, i vredi to znati unapred.
 
-## Sve tri su isto zlato
+## U sva tri ima isto zlata
 
-Čisto zlato je uvek žuto i previše je mekano za nakit koji se nosi svakodnevno. Zato se meša sa drugim metalima. Kod 14 karata to znači 585 delova od hiljadu čistog zlata, dakle 58,5%, a ostatak je legura. Sva tri prstena iste karatne težine imaju istu količinu zlata u sebi — razlikuje se samo ono što je dodato uz njega, i to daje boju.
+Čisto zlato je žuto i premekano za komad koji se nosi svaki dan, pa se meša sa drugim metalima. Kod 14 karata to znači 58,5% čistog zlata, i to važi za sve tri boje podjednako.
 
-**Žuto zlato** je najbliže prirodnoj boji zlata i boja koju većina ljudi ima u glavi kad kaže „zlato".
+Boja dolazi od onoga što je dodato uz zlato.
 
-**Belo zlato** je zlato u leguri koja potiskuje žutu. Rezultat sam po sebi nije čista bela nego blago siva nijansa, pa se takav prsten na kraju prevlači rodijumom — metalom iz platinske grupe koji daje onu hladnu, sjajnu belu koju vidite u izlogu.
+## Žuto
 
-**Roze zlato** svoju toplu, ružičastu notu dobija od bakra u leguri. Što ga je više, to je ruža jača — od nežne pudrasto roze do izraženo bakarne.
+Najbliže je prirodnoj boji zlata i ono što većina ljudi zamisli kad kaže „zlato".
 
-## Šta se razlikuje u nošenju
+Boja je u samom materijalu, pa ne može da se istroši i ne traži nikakvo održavanje. Od tri boja je najmekše, tako da se nešto lakše grebe.
 
-**Rodijum se troši.** To je najvažnija praktična stvar koju treba da znate o belom zlatu. Sloj rodijuma je debljine mikrona i vremenom se stanjuje, najpre na unutrašnjoj strani prstena i po ivicama. Kad se potroši, ispod se vidi toplija nijansa i prsten deluje „požutelo". To nije kvar i ne znači da je prsten loš — to je održavanje koje se ponavlja, kao presvlačenje. Rodiniranje je jeftino i radi se svake dve do pet godina, zavisno od toga koliko nosite prsten.
+## Belo
 
-Žuto i roze zlato se ne prevlače ničim. Njihova boja je u samom materijalu, pa ne može da se istroši. Zato ako vas smeta ideja da prsten povremeno nosite na doradu, žuto ili roze je praktičniji izbor.
+Legura koja potiskuje žutu ne daje čistu belu nego blago sivkastu nijansu, pa se prsten na kraju prevlači rodijumom. To je metal iz platinske grupe i on daje onu hladnu, sjajnu belu koju vidite u izlogu.
 
-**Ako imate osetljivu kožu, recite to pre izrade.** Pojedine legure za belo zlato sadrže nikl, koji je čest alergen. Dok je rodijum na svom mestu, koža ne dolazi u kontakt sa legurom i obično nema problema, ali kad se sloj istroši, osetljivija koža može da reaguje. Ako znate da reagujete na nikl, kažite nam na početku pa da proverimo sastav legure i izaberemo onu koja vam odgovara.
+Rodijum se vremenom troši — najpre sa unutrašnje strane prstena i po ivicama. Kad se sloj istanji, ispod se vidi toplija osnova i prsten deluje požutelo. To nije kvar nego održavanje: rodiniranje se radi svake dve do pet godina, zavisno od toga koliko nosite prsten, i nije skupo.
 
-## Koja boja kome stoji
+Ako znate da vam koža reaguje na nikl, recite nam pre izrade, pa da proverimo sastav legure.
+
+## Roze
+
+Toplu, ružičastu notu daje bakar. Što ga je više, boja je izraženija — od nežne pudraste do bakarne.
+
+Kao i kod žutog, boja je u materijalu i ne troši se. Bakar usput čini leguru tvrđom, pa roze zlato najbolje drži oblik i najmanje se grebe.
+
+## Koja vam stoji
 
 Na ovo gledajte kao na odeću, ne kao na pravilo.
 
-Topliji ten kože, onaj koji na suncu lako potamni i kod kog se vene na zglobu vide zelenkasto, obično lepo nosi žuto i roze zlato. Svetliji ten sa ružičastim podtonom i plavičastim venama obično bolje izgleda u belom zlatu.
+Topliji ten, onaj koji na suncu lako potamni, obično lepo nosi žuto i roze zlato. Svetliji ten sa ružičastim podtonom češće bolje izgleda u belom. Ako se ne prepoznajete ni u jednom opisu, verovatno vam stoje sve tri.
 
-Ako vam se ne uklapa u tu podelu, verovatno ste neutralni i stoje vam sve tri — što je najlakša situacija.
+Dve praktične stvari: boju gledajte na dnevnom svetlu, ne pod lampom u radnji, i uzmite u obzir nakit koji već nosite svaki dan. Prsten koji se ne skida trebalo bi da ide uz sat, minđuše i lančić.
 
-Dve praktične stvari koje se često zaborave: gledajte boju na dnevnom svetlu, ne pod lampom u radnji, i uzmite u obzir šta već nosite. Prsten koji se nosi stalno trebalo bi da ide uz sat, minđuše i lančić koje ne skidate.
+## Zlato i kamen
 
-## Boja zlata i kamen
+Boja osnove menja i to kako izgleda kamen u njoj.
 
-Boja zlata menja i to kako izgleda kamen u njemu.
+Žuto i roze unose toplinu. Kod dijamanta to znači da u njima možete uzeti nijansu boje nižu i dobiti isti utisak, a razliku u ceni staviti u veličinu kamena.
 
-Žuto i roze zlato kamenu daju topliju notu. Kod dijamanata to znači da u žutom zlatu možete uzeti nijansu boje nižu — H ili I — i dobiti isti izgled kao sa skupljim G u belom zlatu, jer zlato ionako unosi toplotu. Ušteda ide u veličinu ili čistoću.
+Belo ne dodaje ništa, pa najbolje pokazuje čist beli dijamant i ističe plave i zelene kamenove — safir i smaragd u belom zlatu izgledaju jače.
 
-Belo zlato je hladnije i ne dodaje ništa, pa najbolje pokazuje čist beli dijamant i ističe plave i zelene kamenove — safir i smaragd u belom zlatu izgledaju jače.
+Ako želite to da vidite pre nego što odlučite, u [Napravi svoj prsten](/#kamenje) možete izabrati kamen i brušenje, pa isti prsten pogledati u sve tri boje.
 
-Roze zlato najlepše ide uz morganit, roze safir i granat, i uz dijamant toplije boje.
+## Ako ste između dve boje
 
-Ako želite da to vidite pre nego što odlučite, u [Napravi svoj prsten](/#kamenje) možete da izaberete kamen i brušenje, pa isti prsten pogledate u sve tri boje zlata.
+Ne mora da bude jedna. Kombinacija žutog i belog zlata u istom komadu je klasika koja ne izlazi iz mode i praktično rešava dilemu, a i lakše se uklapa sa ostalim nakitom.
 
-## Mešanje boja
+## Može li se boja promeniti kasnije
 
-Ne mora da bude jedna. Kombinacija žutog i belog zlata u istom komadu je klasika koja nikad ne izlazi iz mode, i praktično rešava dilemu ako ste između dve boje. Takođe olakšava uklapanje sa ostalim nakitom.
+Delom. Belo zlato može ponovo da se rodinira, ili da se rodijum skine pa da se vidi topla osnova. Prava promena žutog u roze nije moguća, jer je boja u samoj leguri — to bi značilo izraditi komad iznova.
 
-## Može li boja da se promeni kasnije
-
-Delom. Belo zlato može da se rodinira u beljе ili da se rodijum skine, pa se vidi topla osnova. Žuto zlato može da se rodinira i izgleda belo, ali to je onda prevlaka koja se troši, kao i kod belog. Prava promena iz žutog u roze nije moguća, jer je boja u samoj leguri — to znači pretopiti i izraditi iznova.
-
-Zato boju birajte kao da je trajna, a kamen kao stvar koja može da se preseli u novu osnovu kad se ukus promeni.
+Zato boju birajte kao trajnu odluku, a kamen kao nešto što uvek može da se preseli u novu osnovu.
 
 ## Česta pitanja
 
 **Da li belo zlato žuti?**
-Ne žuti samo zlato — troši se rodijumski sloj i ispod se vidi prirodna, toplija nijansa legure. Rešava se ponovnim rodiniranjem.
+Ne žuti samo zlato — troši se rodijumski sloj, pa se ispod vidi prirodna, toplija nijansa. Rešava se ponovnim rodiniranjem.
 
 **Koliko često treba rodinirati prsten?**
 Zavisi od nošenja. Verenički prsten koji se ne skida obično na dve do tri godine, komad koji se nosi povremeno i na pet.
 
 **Da li je 18 karata bolje od 14?**
-Nije bolje, nego drugačije. 18K ima više zlata, pa je boja bogatija, ali je materijal mekši i lakše se grebe. Za prsten koji se nosi svaki dan 14K je praktičniji, i to je ono u čemu mi radimo.
+Nije bolje, nego drugačije. 18K ima više zlata pa je boja bogatija, ali je materijal mekši i lakše se grebe. Za prsten koji se nosi svaki dan 14K je praktičniji, i to je ono u čemu mi radimo.

@@ -1,76 +1,75 @@
 ---
-jezik: hu
-par: belo-zuto-ili-roze-zlato
-naslov: Fehér, sárga vagy rozéarany — hogyan válasszunk, és mi különbözteti meg
-  őket valójában
-datum: 2026-10-12T00:00:00.000Z
-slika: images/uploads/yellow-rose-and-white-gold.png
-uvod: Mindhárom 14 karátos, és mindháromban ugyanannyi arany van. A különbség
-  abban van, amit hozzáadtak — és ez megváltoztatja a színt, a tartósságot és az
-  ápolást. Így válassza ki azt, amelyik Önnek áll.
-meta_opis: "A fehér, a sárga és a rozéarany különbsége: ötvözet, ródiumozás,
-  tartósság, ápolás, és kinek melyik szín áll jól. Az Oniks szabadkai
-  ékszerüzlet tanácsai."
+jezik: "hu"
+par: "belo-zuto-ili-roze-zlato"
+naslov: "Fehér, sárga vagy rozéarany — hogyan válasszunk"
+datum: 2026-10-07T09:00:00.000Z
+slika: "images/cluster-close.jpg"
+uvod: "Mindhárom 14 karátos, és mindháromban ugyanannyi arany van. A különbség a színben, a viselkedésükben és az ápolásukban rejlik. Íme, amit érdemes tudni, mielőtt dönt."
+meta_opis: "A fehér, a sárga és a rozéarany különbsége: miért kell a fehér aranyat ródiumozni, kinek melyik szín áll jól, és hogyan változtatja meg az arany színe a kő megjelenését."
 ---
-Ezt a kérdést kapjuk az üzletben a leggyakrabban. A válasz pedig nem csak az ízlésről szól — a három szín viselés közben másképp viselkedik, és ezt érdemes tudni, mielőtt dönt.
+Ezt a kérdést kapjuk az üzletben a leggyakrabban. A válasz pedig nem csak ízlés dolga — a három szín viselés közben másképp viselkedik, és ezt érdemes előre tudni.
 
-## Mindhárom ugyanaz az arany
+## Mindháromban ugyanannyi arany van
 
-A tiszta arany mindig sárga, és túl lágy a mindennapi viseletre szánt ékszerhez. Ezért más fémekkel ötvözik. A 14 karát azt jelenti, hogy ezer részből 585 tiszta arany, vagyis 58,5 százalék, a többi pedig ötvözőanyag. Ugyanolyan karátú gyűrűben mindháromnál ugyanannyi arany van — csak az különbözik, amit mellé tettek, és ez adja a színt.
+A tiszta arany sárga és túl lágy egy mindennap hordott darabhoz, ezért más fémekkel ötvözik. A 14 karát azt jelenti, hogy 58,5 százalék tiszta arany — és ez mindhárom színre egyformán igaz.
 
-**A sárga arany** áll a legközelebb az arany természetes színéhez, és ez az a szín, amely a legtöbb embernek a fejében van, amikor azt mondja: „arany".
+A szín abból ered, amit az arany mellé tettek.
 
-**A fehér arany** olyan ötvözetben lévő arany, amely visszanyomja a sárgát. Az eredmény önmagában nem tiszta fehér, hanem kissé szürkés árnyalat, ezért az ilyen gyűrűt a végén ródiummal vonják be — ez a platinacsoport egyik fémje, amely azt a hideg, ragyogó fehéret adja, amit a kirakatban lát.
+## Sárga
 
-**A rozéarany** a meleg, rózsaszínes jellegét az ötvözetben lévő réznek köszönheti. Minél több van belőle, annál erősebb a rózsaszín — a finom púderes árnyalattól a kifejezetten vörösrezesig.
+Ez áll a legközelebb az arany természetes színéhez, és ezt képzeli el a legtöbb ember, amikor azt mondja: „arany".
 
-## Mi különbözik viselés közben
+A szín magában az anyagban van, így nem tud elkopni, és semmilyen ápolást nem igényel. A három közül ez a leglágyabb, tehát valamivel könnyebben karcolódik.
 
-**A ródium elhasználódik.** Ez a legfontosabb gyakorlati tudnivaló a fehér aranyról. A ródiumréteg mikron vékony, és idővel elkopik, először a gyűrű belső oldalán és az éleken. Amikor lekopik, alatta egy melegebb árnyalat látszik, és a gyűrű „megsárgultnak" tűnik. Ez nem hiba, és nem jelenti, hogy a gyűrű rossz — ez visszatérő ápolás, mint egy újrafestés. Az újraródiumozás nem drága, és két-öt évente szokás, attól függően, mennyit hordja.
+## Fehér
 
-A sárga és a rozéaranyat nem vonják be semmivel. A színük magában az anyagban van, így nem tud elhasználódni. Ha tehát zavarja a gondolat, hogy a gyűrűt időnként fel kell vinni felújításra, a sárga vagy a rozé a praktikusabb választás.
+A sárgát visszanyomó ötvözet önmagában nem tiszta fehéret ad, hanem enyhén szürkés árnyalatot, ezért a gyűrűt a végén ródiummal vonják be. Ez a platinacsoport egyik fémje, és ez adja azt a hideg, ragyogó fehéret, amit a kirakatban lát.
 
-**Ha érzékeny a bőre, szóljon az elkészítés előtt.** Egyes fehérarany-ötvözetek nikkelt tartalmaznak, az pedig gyakori allergén. Amíg a ródium a helyén van, a bőr nem érintkezik az ötvözettel, és általában nincs gond, de amikor a réteg lekopik, az érzékenyebb bőr reagálhat. Ha tudja magáról, hogy a nikkelre reagál, mondja el az elején, hogy ellenőrizhessük az ötvözet összetételét, és azt válasszuk, amelyik Önnek megfelel.
+A ródium idővel elkopik — először a gyűrű belső oldalán és az éleken. Amikor a réteg elvékonyodik, alatta a melegebb alap látszik, és a gyűrű megsárgultnak tűnik. Ez nem hiba, hanem ápolás: az újraródiumozás két-öt évente szokás, attól függően, mennyit hordja, és nem drága.
 
-## Kinek melyik szín áll jól
+Ha tudja magáról, hogy a bőre reagál a nikkelre, szóljon az elkészítés előtt, hogy ellenőrizhessük az ötvözet összetételét.
+
+## Rozé
+
+A meleg, rózsaszínes jelleget a réz adja. Minél több van belőle, annál erősebb a szín — a finom púderestől a vörösrezesig.
+
+Akárcsak a sárgánál, a szín az anyagban van, és nem kopik el. A réz egyúttal keményebbé is teszi az ötvözetet, így a rozéarany tartja a legjobban a formáját, és karcolódik a legkevésbé.
+
+## Melyik áll Önnek
 
 Erre úgy tekintsen, mint a ruhára, nem mint szabályra.
 
-A melegebb bőrtónus, amely napon könnyen lebarnul, és ahol a csuklón az erek zöldesnek látszanak, általában szépen viseli a sárga és a rozéaranyat. A világosabb, rózsaszínes aláfestésű bőr kékes erekkel többnyire jobban mutat fehér aranyban.
+A melegebb bőrtónus, amely napon könnyen lebarnul, általában szépen viseli a sárga és a rozéaranyat. A világosabb, rózsaszínes aláfestésű bőr gyakrabban mutat jobban fehér aranyban. Ha egyik leírásban sem ismer magára, valószínűleg mindhárom áll Önnek.
 
-Ha egyik leírásba sem illik bele, valószínűleg semleges a tónusa, és mindhárom áll Önnek — ez a legkönnyebb helyzet.
+Két gyakorlati dolog: a színt napfénynél nézze meg, ne az üzlet lámpája alatt, és vegye figyelembe a nap mint nap hordott ékszereit. A le nem vett gyűrűnek illenie kell az órához, a fülbevalóhoz és a lánchoz.
 
-Két gyakorlati dolog, amiről gyakran megfeledkezünk: a színt napfénynél nézze meg, ne az üzlet lámpája alatt, és vegye figyelembe, mit hord már. Az állandóan viselt gyűrűnek illenie kell ahhoz az órához, fülbevalóhoz és lánchoz, amelyet nem vesz le.
+## Az arany és a kő
 
-## Az arany színe és a kő
+Az alap színe azt is megváltoztatja, hogyan mutat benne a kő.
 
-Az arany színe azt is megváltoztatja, hogyan mutat benne a kő.
+A sárga és a rozé melegséget visz bele. Gyémánt esetében ez azt jelenti, hogy bennük egy fokkal alacsonyabb színt is választhat ugyanazzal a hatással, az árkülönbséget pedig a kő méretére fordíthatja.
 
-A sárga és a rozéarany melegebb árnyalatot ad a kőnek. Gyémánt esetében ez azt jelenti, hogy sárga aranyban egy fokkal alacsonyabb színt is választhat — H-t vagy I-t —, és ugyanazt a megjelenést kapja, mint a drágább G-vel fehér aranyban, hiszen az arany amúgy is melegséget visz bele. A megtakarítás pedig mehet méretre vagy tisztaságra.
+A fehér nem ad hozzá semmit, ezért a tiszta fehér gyémántot mutatja meg a legjobban, és kiemeli a kék és zöld köveket — a zafír és a smaragd fehér aranyban erősebben szól.
 
-A fehér arany hidegebb, és nem ad hozzá semmit, ezért a tiszta fehér gyémántot mutatja meg a legjobban, és kiemeli a kék és zöld köveket — a zafír és a smaragd fehér aranyban erősebben szól.
+Ha ezt látni szeretné, mielőtt dönt, a [Tervezze meg saját gyűrűjét](/#kamenje) oldalon kiválaszthatja a követ és a csiszolást, és ugyanazt a gyűrűt mindhárom színben megnézheti.
 
-A rozéarany a morganithoz, a rózsaszín zafírhoz és a gránáthoz áll a legszebben, valamint a melegebb színű gyémánthoz.
+## Ha két szín között áll
 
-Ha ezt látni szeretné, mielőtt dönt, a [Tervezze meg saját gyűrűjét](/#kamenje) oldalon kiválaszthatja a követ és a csiszolást, és ugyanazt a gyűrűt mindhárom aranyszínben megnézheti.
-
-## A színek keverése
-
-Nem kell egyet választani. A sárga és a fehér arany kombinációja egy darabon olyan klasszikus, amely soha nem megy ki a divatból, és gyakorlatilag megoldja a dilemmát, ha két szín között áll. Egyúttal könnyebbé teszi az összehangolást a többi ékszerrel.
+Nem kell egyet választani. A sárga és a fehér arany kombinációja egy darabon olyan klasszikus, amely nem megy ki a divatból, és gyakorlatilag feloldja a dilemmát — ráadásul könnyebben illeszkedik a többi ékszerhez.
 
 ## Megváltoztatható később a szín
 
-Részben. A fehér arany újraródiumozható fehérebbre, vagy a ródium levehető, és akkor a meleg alapszín látszik. A sárga arany is ródiumozható, és akkor fehérnek látszik, de az már bevonat, amely elhasználódik, ugyanúgy, mint a fehér aranynál. A sárgából rozéba való igazi átváltás nem lehetséges, mert a szín magában az ötvözetben van — az beolvasztást és újraelkészítést jelent.
+Részben. A fehér arany újraródiumozható, vagy a ródium levehető, és akkor a meleg alap látszik. A sárgából rozéba való igazi átváltás nem lehetséges, mert a szín magában az ötvözetben van — ez a darab újbóli elkészítését jelentené.
 
-Ezért a színt úgy válassza, mintha véglegesen szólna, a követ viszont úgy, mint valamit, ami új foglalatba költözhet, ha az ízlés idővel változik.
+Ezért a színt végleges döntésként válassza, a követ viszont úgy, mint valamit, ami bármikor új foglalatba költözhet.
 
 ## Gyakori kérdések
 
 **Megsárgul a fehér arany?**
-Nem maga az arany sárgul meg — a ródiumréteg kopik el, és alatta az ötvözet természetes, melegebb árnyalata látszik. Újraródiumozással megoldható.
+Nem maga az arany sárgul meg — a ródiumréteg kopik el, és alatta a természetes, melegebb árnyalat látszik. Újraródiumozással megoldható.
 
 **Milyen gyakran kell újraródiumozni a gyűrűt?**
-Attól függ, mennyit hordja. Egy eljegyzési gyűrűt, amelyet nem vesz le, általában két-három évente; egy csak alkalmanként hordott darabot akár ötévente.
+Attól függ, mennyit hordja. Egy eljegyzési gyűrűt, amelyet nem vesz le, általában két-három évente; egy alkalmanként hordott darabot akár ötévente.
 
 **Jobb a 18 karát a 14-nél?**
 Nem jobb, hanem más. A 18K-ban több arany van, így a színe telítettebb, de az anyag lágyabb és könnyebben karcolódik. Mindennap hordott gyűrűhöz a 14K praktikusabb, és mi ebben dolgozunk.
