@@ -2,7 +2,7 @@
 jezik: sr
 par: belo-zuto-ili-roze-zlato
 naslov: Belo, žuto ili roze zlato — kako izabrati i šta ih stvarno razlikuje
-datum: 2026-10-07T09:00:00.000Z
+datum: 2026-10-12T00:00:00.000Z
 slika: images/uploads/yellow-rose-and-white-gold.png
 uvod: Sva tri su 14 karata i sva tri imaju istu količinu zlata. Razlika je u
   onome što je dodato, a to menja boju, izdržljivost i održavanje. Kako da
