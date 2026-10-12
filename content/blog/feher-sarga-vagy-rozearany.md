@@ -2,7 +2,7 @@
 jezik: hu
 par: belo-zuto-ili-roze-zlato
 naslov: Fehér, sárga vagy rozéarany — hogyan válasszunk
-datum: 2026-10-07T09:00:00.000Z
+datum: 2026-10-12T00:00:00.000Z
 slika: images/uploads/yellow-rose-and-white-gold.png
 uvod: Mindhárom 14 karátos, és mindháromban ugyanannyi arany van. A különbség a
   színben, a viselkedésükben és az ápolásukban rejlik. Íme, amit érdemes tudni,
