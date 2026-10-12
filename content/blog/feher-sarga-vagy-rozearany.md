@@ -1,11 +1,16 @@
 ---
-jezik: "hu"
-par: "belo-zuto-ili-roze-zlato"
-naslov: "Fehér, sárga vagy rozéarany — hogyan válasszunk, és mi különbözteti meg őket valójában"
+jezik: hu
+par: belo-zuto-ili-roze-zlato
+naslov: Fehér, sárga vagy rozéarany — hogyan válasszunk, és mi különbözteti meg
+  őket valójában
 datum: 2026-10-07T09:00:00.000Z
-slika: "images/cluster-close.jpg"
-uvod: "Mindhárom 14 karátos, és mindháromban ugyanannyi arany van. A különbség abban van, amit hozzáadtak — és ez megváltoztatja a színt, a tartósságot és az ápolást. Így válassza ki azt, amelyik Önnek áll."
-meta_opis: "A fehér, a sárga és a rozéarany különbsége: ötvözet, ródiumozás, tartósság, ápolás, és kinek melyik szín áll jól. Az Oniks szabadkai ékszerüzlet tanácsai."
+slika: images/uploads/yellow-rose-and-white-gold.png
+uvod: Mindhárom 14 karátos, és mindháromban ugyanannyi arany van. A különbség
+  abban van, amit hozzáadtak — és ez megváltoztatja a színt, a tartósságot és az
+  ápolást. Így válassza ki azt, amelyik Önnek áll.
+meta_opis: "A fehér, a sárga és a rozéarany különbsége: ötvözet, ródiumozás,
+  tartósság, ápolás, és kinek melyik szín áll jól. Az Oniks szabadkai
+  ékszerüzlet tanácsai."
 ---
 Ezt a kérdést kapjuk az üzletben a leggyakrabban. A válasz pedig nem csak az ízlésről szól — a három szín viselés közben másképp viselkedik, és ezt érdemes tudni, mielőtt dönt.
 
