@@ -90,18 +90,24 @@ const CSS = `
   footer{border-top:1px solid var(--line);}
 `;
 
+// ---------- dostupnost (polje "Dostupnost" u adminu; prazno = na stanju) ----------
+const STANJE = { 'na-stanju': 'Na stanju', 'po-porudzbini': 'Izrada po porudžbini · oko mesec dana' };
+const stanjeOf = p => p.stanje === 'po-porudzbini' ? 'po-porudzbini' : 'na-stanju';
+
 // ---------- product card (same markup as the homepage grid) ----------
 function card(p) {
+  const stanje = stanjeOf(p);
   const imgs = p.slike.map(absImg);
   const metaBits = [p.kolekcija ? 'KOLEKCIJA ' + p.kolekcija.toUpperCase() : '', (p.materijal || '').toUpperCase(), (p.kamenje || '').toUpperCase(), p.cena || ''].filter(Boolean);
   const slides = imgs.map(s => `<img loading="lazy" decoding="async" src="${esc(s)}" alt="${esc(p.naziv)}">`).join('');
   const dots = imgs.length > 1 ? `<div class="dots">${imgs.map((_, i) => `<i class="${i === 0 ? 'on' : ''}"></i>`).join('')}</div>` : '';
-  return `<div class="prod" data-col="${esc(slug(p.kolekcija))}" data-imgs="${esc(imgs.join('|'))}" data-name="${esc(p.naziv)}" data-meta="${esc(metaBits.join(' · '))}">
+  return `<div class="prod" data-col="${esc(slug(p.kolekcija))}" data-imgs="${esc(imgs.join('|'))}" data-name="${esc(p.naziv)}" data-meta="${esc(metaBits.join(' · '))}" data-stanje="${stanje}">
   <div class="ph"><div class="slider">${slides}</div>${dots}${imgs.length > 1 ? '<button class="nav-arrow prev" aria-label="Prethodna">&#10094;</button><button class="nav-arrow next" aria-label="Sledeća">&#10095;</button>' : ''}</div>
   <div class="nm">${esc(p.naziv)}</div>
   <div class="mt">${esc([p.kolekcija, p.materijal].filter(Boolean).join(' · ').toUpperCase())}</div>
   ${p.kamenje ? `<div class="sp">${esc(p.kamenje)}</div>` : ''}
   <div class="pr">${esc(p.cena || 'Cena na upit')}</div>
+  <div class="st${stanje === 'po-porudzbini' ? ' order' : ''}">${esc(STANJE[stanje])}</div>
   <div class="instore">Kupovina isključivo u radnji</div>
 </div>`;
 }
@@ -228,6 +234,8 @@ const JS = `
         dotsEl.innerHTML = imgs.length > 1 ? imgs.map((_, i) => '<i class="' + (i === 0 ? 'on' : '') + '"></i>').join('') : '';
         document.getElementById('lbName').textContent = p.dataset.name || '';
         document.getElementById('lbMeta').textContent = p.dataset.meta || '';
+        const stEl = document.getElementById('lbStanje'), stCard = p.querySelector('.st');
+        if (stEl && stCard) { stEl.textContent = stCard.textContent; stEl.classList.toggle('order', p.dataset.stanje === 'po-porudzbini'); }
         track.scrollLeft = 0; lb.classList.toggle('multi', imgs.length > 1);
         lb.classList.add('open'); document.body.style.overflow = 'hidden';
       };
@@ -253,7 +261,7 @@ function page(cat, items) {
     mainEntity: { '@type': 'ItemList', itemListElement: items.map((p, i) => {
       const priceNum = (String(p.cena || '').match(/[\d.]+/) || [''])[0].replace(/\./g, '');
       const prod = { '@type': 'Product', name: p.naziv, image: p.slike.map(s => SITE + absImg(s)), material: p.materijal || undefined, brand: { '@type': 'Brand', name: 'Oniks Diamonds & Gems' } };
-      if (priceNum) prod.offers = { '@type': 'Offer', priceCurrency: 'RSD', price: priceNum, availability: 'https://schema.org/InStoreOnly' };
+      if (priceNum) prod.offers = { '@type': 'Offer', priceCurrency: 'RSD', price: priceNum, availability: stanjeOf(p) === 'po-porudzbini' ? 'https://schema.org/MadeToOrder' : 'https://schema.org/InStoreOnly' };
       return { '@type': 'ListItem', position: i + 1, item: prod };
     }) }
   };
@@ -313,7 +321,7 @@ ${header}
   <button class="lb-arrow prev" id="lbPrev" aria-label="Prethodna">&#10094;</button>
   <button class="lb-arrow next" id="lbNext" aria-label="Sledeća">&#10095;</button>
   <div class="lb-track" id="lbTrack"></div>
-  <div class="lb-info"><div class="lb-dots" id="lbDots"></div><div class="n" id="lbName"></div><div class="m" id="lbMeta"></div><div class="s">Kupovina isključivo u radnji</div></div>
+  <div class="lb-info"><div class="lb-dots" id="lbDots"></div><div class="n" id="lbName"></div><div class="m" id="lbMeta"></div><div class="st" id="lbStanje"></div><div class="s">Kupovina isključivo u radnji</div></div>
 </div>
 <footer>
   <div class="wrap">
