@@ -20,15 +20,30 @@ const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').re
 function parseFrontmatter(txt) {
   const m = txt.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
   if (!m) return { data: {}, body: txt };
-  const data = {};
+  // Admin panel (Decap) prelama duge vrednosti u više redova:
+  //   uvod: Prvi deo teksta,
+  //     nastavak u sledećem redu.
+  // Uvučeni redovi su nastavak prethodnog polja i spajaju se sa njim.
+  const raw = {};
+  let key = null;
   m[1].split(/\r?\n/).forEach(line => {
-    const i = line.indexOf(':');
-    if (i < 0) return;
-    const k = line.slice(0, i).trim();
-    let v = line.slice(i + 1).trim();
-    if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) v = v.slice(1, -1);
-    data[k] = v;
+    const top = line.match(/^([A-Za-z_][\w-]*):(.*)$/);
+    if (top) { key = top[1]; raw[key] = [top[2].trim()]; return; }
+    if (key && /^\s/.test(line)) raw[key].push(line.trim());
   });
+  const data = {};
+  for (const [k, parts] of Object.entries(raw)) {
+    let v;
+    if (/^[>|][+-]?$/.test(parts[0])) {
+      // blok-stil: "uvod: >-" ili "uvod: |" pa tekst u sledećim redovima
+      v = parts.slice(1).join(parts[0][0] === '|' ? '\n' : ' ').trim();
+    } else {
+      v = parts.filter(Boolean).join(' ').trim();
+      if (v.length > 1 && v.startsWith('"') && v.endsWith('"')) v = v.slice(1, -1).replace(/\\(["\\])/g, '$1');
+      else if (v.length > 1 && v.startsWith("'") && v.endsWith("'")) v = v.slice(1, -1).replace(/''/g, "'");
+    }
+    data[k] = v;
+  }
   return { data, body: m[2] };
 }
 
