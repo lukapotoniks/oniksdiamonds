@@ -1,11 +1,15 @@
 ---
-jezik: "sr"
-par: "oznake-na-zlatu"
-naslov: "Oznake na zlatu — šta znače 585, 750 i ostali brojevi"
+jezik: sr
+par: oznake-na-zlatu
+naslov: Oznake na zlatu — šta znače 585, 750 i ostali brojevi
 datum: 2026-10-18T09:00:00.000Z
-slika: "images/uploads/dpvo2s.jpg"
-uvod: "Mali broj utisnut na zlatu govori koliko je u komadu čistog zlata. Evo šta znače 585, 750, 333 i ostale oznake, sa čim se zlato meša i zašto gram zlata različite finoće nema istu cenu."
-meta_opis: "Šta znače oznake na zlatu 585, 750, 375, 333 i 999, koliko je to karata, sa čim se zlato meša i kako prepoznati pozlatu (GP, GF). Zlatara Oniks, Subotica."
+slika: images/uploads/rich-yellow-999-gold-ingot.png
+uvod: Mali broj utisnut na zlatu govori koliko je u komadu čistog zlata. Evo šta
+  znače 585, 750, 333 i ostale oznake, sa čim se zlato meša i zašto gram zlata
+  različite finoće nema istu cenu.
+meta_opis: Šta znače oznake na zlatu 585, 750, 375, 333 i 999, koliko je to
+  karata, sa čim se zlato meša i kako prepoznati pozlatu (GP, GF). Zlatara
+  Oniks, Subotica.
 ---
 Na unutrašnjoj strani prstena, na kopči lančića ili na alkici priveska stoji broj od tri cifre, toliko sitan da se često vidi tek pod lupom. Taj broj kaže koliko je u komadu čistog zlata.
 
