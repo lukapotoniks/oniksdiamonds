@@ -21,7 +21,7 @@ collections:
             name: "proizvodi"
             widget: "list"
             label_singular: "Proizvod"
-            summary: "{{fields.naziv}} — {{fields.cena}}"
+            summary: "{{fields.naziv}} — {{fields.cena}} · {{fields.stanje}}"
             fields:
               - { label: "Naziv", name: "naziv", widget: "string", hint: "npr. Prsten sa dijamantskim cvetom" }
               - { label: "Kolekcija", name: "kolekcija", widget: "string", hint: "Hana, Elena, ili upišite ime nove kolekcije" }
@@ -38,6 +38,14 @@ collections:
               - { label: "Materijal", name: "materijal", widget: "string", hint: "npr. 14K žuto zlato · 1,83 g" }
               - { label: "Kamenje", name: "kamenje", widget: "string", required: false, hint: "npr. Dijamant 0,28 ct · F / VS2" }
               - { label: "Cena", name: "cena", widget: "string", hint: "npr. 105.500 RSD  ili  Cena na upit" }
+              - label: "Dostupnost"
+                name: "stanje"
+                widget: "select"
+                default: "na-stanju"
+                options:
+                  - { label: "Na stanju", value: "na-stanju" }
+                  - { label: "Izrada po porudžbini (oko mesec dana)", value: "po-porudzbini" }
+                hint: "Kad prodate komad koji više nemate u radnji, prebacite na Izrada po porudžbini."
               - label: "Slike"
                 name: "slike"
                 widget: "list"
