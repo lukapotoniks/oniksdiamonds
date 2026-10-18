@@ -1,11 +1,16 @@
 ---
-jezik: "hu"
-par: "oznake-na-zlatu"
-naslov: "Jelzések az aranyon — mit jelent az 585, a 750 és a többi szám"
+jezik: hu
+par: oznake-na-zlatu
+naslov: Jelzések az aranyon — mit jelent az 585, a 750 és a többi szám
 datum: 2026-10-18T09:00:00.000Z
-slika: "images/uploads/dpvo2s.jpg"
-uvod: "Az aranyba ütött apró szám megmutatja, mennyi tiszta arany van a darabban. Elmagyarázzuk, mit jelent az 585, a 750, a 333 és a többi jelzés, mivel keverik az aranyat, és miért nem ugyanannyi egy gramm arany különböző finomságnál."
-meta_opis: "Mit jelentenek az aranyon lévő 585, 750, 375, 333 és 999 jelzések, hány karát ez, mivel ötvözik az aranyat, és hogyan ismerhető fel az aranyozás (GP, GF). Oniks ékszerüzlet, Szabadka."
+slika: images/uploads/rich-yellow-999-gold-ingot.png
+uvod: Az aranyba ütött apró szám megmutatja, mennyi tiszta arany van a darabban.
+  Elmagyarázzuk, mit jelent az 585, a 750, a 333 és a többi jelzés, mivel
+  keverik az aranyat, és miért nem ugyanannyi egy gramm arany különböző
+  finomságnál.
+meta_opis: Mit jelentenek az aranyon lévő 585, 750, 375, 333 és 999 jelzések,
+  hány karát ez, mivel ötvözik az aranyat, és hogyan ismerhető fel az aranyozás
+  (GP, GF). Oniks ékszerüzlet, Szabadka.
 ---
 A gyűrű belső oldalán, a lánc kapcsán vagy a medál akasztóján egy háromjegyű szám áll, olyan apró, hogy gyakran csak nagyítóval látszik. Ez a szám megmutatja, mennyi tiszta arany van a darabban.
 
