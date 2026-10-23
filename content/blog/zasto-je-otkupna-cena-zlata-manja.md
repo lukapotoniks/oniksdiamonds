@@ -1,11 +1,15 @@
 ---
-jezik: "sr"
-par: "otkupna-cena-zlata"
-naslov: "Otkup zlata — zašto je otkupna cena upola manja od cene novog nakita"
+jezik: sr
+par: otkupna-cena-zlata
+naslov: Otkup zlata — zašto je otkupna cena upola manja od cene novog nakita
 datum: 2026-10-23T09:00:00.000Z
-slika: "images/uploads/chatgpt-image-sep-11-2026-01_01_39-am.png"
-uvod: "Mnogi se iznenade kad čuju otkupnu cenu zlata. Evo kroz šta zlato prolazi od trenutka kad ga otkupimo do novog komada u izlogu, i gde zapravo odlazi razlika u ceni."
-meta_opis: "Zašto je otkupna cena zlata niža od prodajne: rafinacija, gubitak pri preradi, ponovno legiranje, izrada novog nakita, PDV i rizik promene cene. Otkup zlata u Subotici, zlatara Oniks."
+slika: images/uploads/serbian-2000-dinar-notes-in-hand.png
+uvod: Mnogi se iznenade kad čuju otkupnu cenu zlata. Evo kroz šta zlato prolazi
+  od trenutka kad ga otkupimo do novog komada u izlogu, i gde zapravo odlazi
+  razlika u ceni.
+meta_opis: "Zašto je otkupna cena zlata niža od prodajne: rafinacija, gubitak
+  pri preradi, ponovno legiranje, izrada novog nakita, PDV i rizik promene cene.
+  Otkup zlata u Subotici, zlatara Oniks."
 ---
 „Kako to da mi zlato otkupljujete upola jeftinije nego što ga prodajete?"
 
