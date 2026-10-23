@@ -1,11 +1,16 @@
 ---
-jezik: "hu"
-par: "otkupna-cena-zlata"
-naslov: "Aranyfelvásárlás — miért feleannyi a felvásárlási ár, mint az új ékszer ára"
+jezik: hu
+par: otkupna-cena-zlata
+naslov: Aranyfelvásárlás — miért feleannyi a felvásárlási ár, mint az új ékszer ára
 datum: 2026-10-23T09:00:00.000Z
-slika: "images/uploads/chatgpt-image-sep-11-2026-01_01_39-am.png"
-uvod: "Sokakat meglep, amikor meghallják az arany felvásárlási árát. Megmutatjuk, min megy keresztül az arany attól a pillanattól, hogy felvásároltuk, egészen az új darabig a kirakatban, és hová kerül valójában az árkülönbség."
-meta_opis: "Miért alacsonyabb az arany felvásárlási ára az eladási árnál: finomítás, veszteség a feldolgozás során, újraötvözés, új ékszer készítése, ÁFA és az árváltozás kockázata. Aranyfelvásárlás Szabadkán, Oniks ékszerüzlet."
+slika: images/uploads/serbian-2000-dinar-notes-in-hand.png
+uvod: Sokakat meglep, amikor meghallják az arany felvásárlási árát. Megmutatjuk,
+  min megy keresztül az arany attól a pillanattól, hogy felvásároltuk, egészen
+  az új darabig a kirakatban, és hová kerül valójában az árkülönbség.
+meta_opis: "Miért alacsonyabb az arany felvásárlási ára az eladási árnál:
+  finomítás, veszteség a feldolgozás során, újraötvözés, új ékszer készítése,
+  ÁFA és az árváltozás kockázata. Aranyfelvásárlás Szabadkán, Oniks
+  ékszerüzlet."
 ---
 „Hogy lehet, hogy feleannyiért vásárolják fel tőlem az aranyat, mint amennyiért eladják?"
 
