@@ -2,7 +2,7 @@
 jezik: "hu"
 par: "da-li-je-za-dobar-nakit-potrebno-ici-u-veliki-grad"
 naslov: "Kell-e nagyvárosba menni a jó ékszerért?"
-datum: 2026-11-16T09:00:00.000Z
+datum: 2026-11-06T09:00:00.000Z
 slika: "images/cluster-hand.jpg"
 uvod: "Az eljegyzési gyűrű megvásárlása előtt sokan autóba ülnek, és Belgrádba vagy Újvidékre indulnak. Ez érthető — de az ékszer minősége nem az üzlet címén múlik. Íme, mi határozza meg valójában, és hogyan ellenőrizheti bárhol."
 meta_opis: "Kell-e nagyvárosba menni a jó ékszerért? Mi határozza meg valójában az ékszer minőségét és árát, és hogyan ellenőrizhet bármely ékszerüzletet."
