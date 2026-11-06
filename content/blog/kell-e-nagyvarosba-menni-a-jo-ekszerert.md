@@ -1,11 +1,14 @@
 ---
-jezik: "hu"
-par: "da-li-je-za-dobar-nakit-potrebno-ici-u-veliki-grad"
-naslov: "Kell-e nagyvárosba menni a jó ékszerért?"
+jezik: hu
+par: da-li-je-za-dobar-nakit-potrebno-ici-u-veliki-grad
+naslov: Kell-e nagyvárosba menni a jó ékszerért?
 datum: 2026-11-06T09:00:00.000Z
-slika: "images/cluster-hand.jpg"
-uvod: "Az eljegyzési gyűrű megvásárlása előtt sokan autóba ülnek, és Belgrádba vagy Újvidékre indulnak. Ez érthető — de az ékszer minősége nem az üzlet címén múlik. Íme, mi határozza meg valójában, és hogyan ellenőrizheti bárhol."
-meta_opis: "Kell-e nagyvárosba menni a jó ékszerért? Mi határozza meg valójában az ékszer minőségét és árát, és hogyan ellenőrizhet bármely ékszerüzletet."
+slika: images/uploads/fine-jewelry-crafted-in-subotica.png
+uvod: Az eljegyzési gyűrű megvásárlása előtt sokan autóba ülnek, és Belgrádba
+  vagy Újvidékre indulnak. Ez érthető — de az ékszer minősége nem az üzlet címén
+  múlik. Íme, mi határozza meg valójában, és hogyan ellenőrizheti bárhol.
+meta_opis: Kell-e nagyvárosba menni a jó ékszerért? Mi határozza meg valójában
+  az ékszer minőségét és árát, és hogyan ellenőrizhet bármely ékszerüzletet.
 ---
 Amikor valami fontosat vásárolunk — eljegyzési gyűrűt, karikagyűrűt, évfordulós ajándékot —, a Vajdaságból és Szerbia más részeiből sokan Belgrádba vagy Újvidékre indulnak. A logika világos: nagyobb város, nagyobb választék, ismertebb nevek. Ha valamit egyszer vesz meg az ember életében, biztos akar lenni a dolgában.
 
