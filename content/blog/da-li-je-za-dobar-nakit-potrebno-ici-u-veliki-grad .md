@@ -2,7 +2,7 @@
 jezik: "sr"
 par: "da-li-je-za-dobar-nakit-potrebno-ici-u-veliki-grad"
 naslov: "Da li je za dobar nakit potrebno ići u veliki grad?"
-datum: 2026-11-16T09:00:00.000Z
+datum: 2026-11-06T09:00:00.000Z
 slika: "images/cluster-hand.jpg"
 uvod: "Pred kupovinu vereničkog prstena mnogi sednu u auto i krenu u Beograd ili Novi Sad. To je razumljivo — ali kvalitet nakita ne zavisi od adrese radnje. Evo šta ga zaista određuje i kako to da proverite bilo gde."
 meta_opis: "Da li je za dobar nakit potrebno ići u veliki grad? Šta zaista određuje kvalitet i cenu nakita i kako da proverite svaku zlataru, gde god kupujete."
