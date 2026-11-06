@@ -56,7 +56,7 @@ const homeCss = (home.match(/<style>([\s\S]*?)<\/style>/) || ['', ''])[1];
 const fonts = (home.match(/<link href="https:\/\/fonts\.googleapis\.com[^>]*>/) || [''])[0];
 
 // header + mobile panel from the homepage, links made absolute, language switcher kept
-let header = (home.match(/<header id="siteHeader">[\s\S]*?<\/header>\s*<div class="mobile-panel"[\s\S]*?<\/div>\n/) || [''])[0];
+let header = (home.match(/<header id="siteHeader">[\s\S]*?<\/header>\s*<div class="mobile-panel"[\s\S]*?<\/div><!-- \/mobile-panel -->\n/) || [''])[0];
 header = header
   .replace(/href="#([a-z]+)"/g, 'href="/#$1"')
   .replace(/href="blog\/"/g, 'href="/blog/"')
@@ -181,7 +181,6 @@ const LANG_JS = `
     if (bar) bar.addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
       setLang(b.dataset.l);
-      const p = document.getElementById('mobilePanel'); if (p) p.classList.remove('open');
     });
   });
   try { const saved = localStorage.getItem('oniks_lang'); if (saved && saved !== 'sr') setLang(saved); } catch(e){}
@@ -192,7 +191,10 @@ const TILE_IMG = { verenicko: '/images/uploads/vunterslauska.png', prstenje: '/i
 const JS = `
   const menuBtn = document.getElementById('menuBtn'), panel = document.getElementById('mobilePanel'), moreWrap = document.getElementById('moreWrap');
   const isDesktop = () => window.matchMedia('(min-width:860px)').matches;
-  if (menuBtn) menuBtn.addEventListener('click', e => { e.stopPropagation(); if (isDesktop()) moreWrap.classList.toggle('open'); else panel.classList.toggle('open'); });
+  const setMenu = open => { panel.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false'); if (open) { const c = document.getElementById('menuClose'); if (c) c.focus(); } };
+  if (menuBtn) menuBtn.addEventListener('click', e => { e.stopPropagation(); if (isDesktop()) moreWrap.classList.toggle('open'); else setMenu(!panel.classList.contains('open')); });
+  const menuClose = document.getElementById('menuClose'); if (menuClose) menuClose.addEventListener('click', () => setMenu(false));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && panel && panel.classList.contains('open')) setMenu(false); });
   if (panel) panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => panel.classList.remove('open')));
   document.addEventListener('click', e => { if (moreWrap && !moreWrap.contains(e.target)) moreWrap.classList.remove('open'); });
   const drops = document.querySelectorAll('.has-drop');
