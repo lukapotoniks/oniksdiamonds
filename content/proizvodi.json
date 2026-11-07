@@ -4,14 +4,13 @@
       "naziv": "Prsten sa dijamantskim cvetom",
       "kolekcija": "Hana",
       "vrsta": [
-        "verenicko",
         "prstenje"
       ],
       "materijal": "14K žuto zlato",
       "kamenje": "Dijamanti 0,28 ct · F / VS2",
       "cena": "104.900 RSD",
       "slike": [
-        "images/cluster-close.jpg",
+        "images/uploads/prsten-cvet.png",
         "images/cluster-hand.jpg"
       ],
       "stanje": "na-stanju"
@@ -26,7 +25,7 @@
       "kamenje": "London topaz 0,29 ct · Dijamanti 0,05 ct · F / VS2",
       "cena": "64.350 RSD",
       "slike": [
-        "images/sapphire-close.jpg",
+        "images/uploads/lndtopaz-prsten-moj.png",
         "images/sapphire-hand.jpg"
       ],
       "stanje": "na-stanju"
@@ -47,9 +46,8 @@
     },
     {
       "slike": [
-        "images/uploads/file_00000000fc04820a98409af48383d108.png",
-        "images/uploads/file_00000000b37081f6a65c79a4e749d09b.png",
-        "images/uploads/file_00000000e2b88243a2e5003e96746b6b.png"
+        "images/uploads/suzenje.png",
+        "images/uploads/file_00000000b37081f6a65c79a4e749d09b.png"
       ],
       "naziv": "Dijamantski verenički prsten sa suženjem",
       "kolekcija": "Elena",
@@ -63,7 +61,7 @@
     },
     {
       "slike": [
-        "images/uploads/file_000000002bf4820a857d264dfad5f68e.png",
+        "images/uploads/kocka.png",
         "images/uploads/file_00000000fa9482438d7e4628dbafba5c.png"
       ],
       "naziv": "Prsten sa dijamantima Klaster",
@@ -78,7 +76,7 @@
     },
     {
       "slike": [
-        "images/uploads/file_000000005c7c820aa841be5936ad22bb.png",
+        "images/uploads/halo.png",
         "images/uploads/file_00000000f0a08210bebf51c31d2c011c.png"
       ],
       "naziv": "Prsten sa dijamantima Halo",
@@ -94,7 +92,7 @@
     },
     {
       "slike": [
-        "images/uploads/file_00000000cea881f49e71d1175a8d8cbf.png",
+        "images/uploads/prsten-pahulja-beli.png",
         "images/uploads/file_000000007748820aa062af04ba630e19.png"
       ],
       "naziv": "Prsten sa dijamantima Pahuljica",
@@ -109,6 +107,7 @@
     },
     {
       "slike": [
+        "images/uploads/solitaire.png",
         "images/uploads/file_0000000046bc820a9d606fe92c573a3e.png"
       ],
       "naziv": "Dijamantski verenički prsten Solitaire ",
@@ -123,6 +122,7 @@
     },
     {
       "slike": [
+        "images/uploads/twist.png",
         "images/uploads/file_00000000874481f8b5ff09b6b974ab9a.png"
       ],
       "naziv": "Dijamantski verenički prsten Twist Solitaire",
@@ -145,8 +145,8 @@
       "kamenje": "Dijamanti 0.32 ct · F / VS2",
       "cena": "74.900 RSD",
       "slike": [
-        "images/uploads/mindj-cvet-1.png",
-        "images/uploads/minjd-cvet-2.png"
+        "images/uploads/midnjsua.png",
+        "images/uploads/mindj-cvet-1.png"
       ],
       "stanje": "po-porudzbini"
     },
@@ -196,6 +196,7 @@
     },
     {
       "slike": [
+        "images/uploads/dija-prst.png",
         "images/uploads/slika22.png"
       ],
       "naziv": "Dijamantski verenički prsten ",
@@ -210,8 +211,8 @@
     },
     {
       "slike": [
-        "images/uploads/dpvs1s.jpg",
-        "images/uploads/dpvs2s.jpg"
+        "images/uploads/yg.png",
+        "images/uploads/dpvs1s.jpg"
       ],
       "naziv": "Dijamantski verenički prsten Solitaire YG",
       "kolekcija": "Elena",
@@ -225,7 +226,8 @@
     },
     {
       "slike": [
-        "images/uploads/vunterslauska.png"
+        "images/uploads/warm-gold-oval-diamond-solitaire-ring.png",
+        "images/uploads/dpvo2s.jpg"
       ],
       "naziv": "Verenički prsten sa ovalnim dijamantom",
       "kolekcija": "Hana",
@@ -247,8 +249,8 @@
       "kamenje": "Dijamant 0.10 ct · F / VS2",
       "cena": "74.900 RSD",
       "slike": [
-        "images/uploads/dpv4vk1s.jpg",
-        "images/uploads/chatgpt-image-sep-11-2026-12_52_21-am.png"
+        "images/uploads/v.png",
+        "images/uploads/dpv4vk1s.jpg"
       ],
       "stanje": "na-stanju"
     },
@@ -262,8 +264,8 @@
       "kamenje": "Dijamant 0.08 ct · F / VS2",
       "cena": "57.900 RSD",
       "slike": [
-        "images/uploads/slika-7.png",
-        "images/uploads/chatgpt-image-sep-11-2026-01_01_39-am.png"
+        "images/uploads/kruzni-fas.png",
+        "images/uploads/slika-7.png"
       ],
       "stanje": "na-stanju"
     },
