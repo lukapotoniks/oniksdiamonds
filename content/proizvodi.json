@@ -436,6 +436,20 @@
       "slike": [
         "images/uploads/white-gold-ring-with-twin-diamond-halos.png"
       ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Prsten sa ovalnim peridotom i dijamantima",
+      "kolekcija": "Hana",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Peridot 0.53 ct , Dijamanti 0.10 ct · EF / SI1",
+      "cena": "59.970 RSD",
+      "slike": [
+        "images/uploads/yellow-gold-ring-with-olive-green-oval-stone.png"
+      ]
     }
   ]
 }
