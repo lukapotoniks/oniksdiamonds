@@ -186,7 +186,7 @@ const LANG_JS = `
   try { const saved = localStorage.getItem('oniks_lang'); if (saved && saved !== 'sr') setLang(saved); } catch(e){}
 `;
 
-const TILE_IMG = { verenicko: '/images/uploads/vunterslauska.png', prstenje: '/images/sapphire-hand.jpg', mindjuse: '/images/earring-model.jpg', ogrlice: '/images/cross-pendant.jpg', narukvice: '/images/baguette-hand.jpg' };
+const TILE_IMG = { verenicko: '/images/verenicko-cover.jpg', prstenje: '/images/sapphire-hand.jpg', mindjuse: '/images/earring-model.jpg', ogrlice: '/images/cross-pendant.jpg', narukvice: '/images/baguette-hand.jpg' };
 
 const JS = `
   const menuBtn = document.getElementById('menuBtn'), panel = document.getElementById('mobilePanel'), moreWrap = document.getElementById('moreWrap');
