@@ -37,8 +37,8 @@ const CATS = [
 
 // Lab grown — own page; these products never appear on the natural pages above
 const LAB = { key: 'lab', slug: 'lab-grown-dijamanti', name: 'Lab grown dijamanti', label: 'LAB GROWN',
-  lead: 'Dijamanti nastali u laboratoriji, u 14K zlatu. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.',
-  meta: 'Nakit sa laboratorijskim (lab grown) dijamantima u 14K zlatu, jasno označen. Oniks Diamonds & Gems, Subotica.' };
+  lead: 'Nakit sa dijamantima nastalim u laboratoriji. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.',
+  meta: 'Nakit sa laboratorijskim (lab grown) dijamantima u zlatu, jasno označen. Oniks Diamonds & Gems, Subotica.' };
 
 // ---------- helpers ----------
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -154,7 +154,7 @@ const DOP = {
     "Ostale vrste nakita": "Other types of jewellery",
     "Vrste nakita": "Jewellery types",
     "Lab grown dijamanti": "Lab-grown diamonds", "LAB GROWN": "LAB-GROWN", "LAB GROWN DIJAMANT": "LAB-GROWN DIAMOND", "Kolekcije": "Collections", "Sve kolekcije": "All collections",
-    "Dijamanti nastali u laboratoriji, u 14K zlatu. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.": "Laboratory-grown diamonds set in 14K gold. Every piece on this page is clearly labelled as lab-grown.",
+    "Nakit sa dijamantima nastalim u laboratoriji. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.": "Jewellery with laboratory-grown diamonds. Every piece on this page is clearly labelled as lab-grown.",
     "Šta je lab grown dijamant?": "What is a lab-grown diamond?",
     "Dijamant koji je nastao u laboratoriji, a ne u zemlji. Hemijski sastav, tvrdoća i sjaj su isti kao kod prirodnog dijamanta, i razlika se ne vidi golim okom — utvrđuje se samo gemološkom opremom. Razlika je u poreklu, a time i u ceni.": "A diamond formed in a laboratory rather than in the earth. Its chemical composition, hardness and brilliance are the same as a natural diamond's, and the difference cannot be seen with the naked eye — only gemological equipment can tell them apart. The difference is in origin, and therefore in price.",
     "Zato su lab grown komadi kod nas uvek odvojeni od prirodnog nakita i jasno označeni. Više o razlici:": "That is why our lab-grown pieces are always kept separate from natural jewellery and clearly labelled. More on the difference:",
@@ -175,7 +175,7 @@ const DOP = {
     "Ostale vrste nakita": "Más ékszertípusok",
     "Vrste nakita": "Ékszertípusok",
     "Lab grown dijamanti": "Laborban növesztett gyémántok", "LAB GROWN": "LABORGYÉMÁNT", "LAB GROWN DIJAMANT": "LABORBAN NÖVESZTETT GYÉMÁNT", "Kolekcije": "Kollekciók", "Sve kolekcije": "Összes kollekció",
-    "Dijamanti nastali u laboratoriji, u 14K zlatu. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.": "Laborban növesztett gyémántok 14K aranyban. Ezen az oldalon minden darab egyértelműen laborgyémántként van jelölve.",
+    "Nakit sa dijamantima nastalim u laboratoriji. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.": "Ékszerek laborban növesztett gyémánttal. Ezen az oldalon minden darab egyértelműen laborgyémántként van jelölve.",
     "Šta je lab grown dijamant?": "Mi a laborban növesztett gyémánt?",
     "Dijamant koji je nastao u laboratoriji, a ne u zemlji. Hemijski sastav, tvrdoća i sjaj su isti kao kod prirodnog dijamanta, i razlika se ne vidi golim okom — utvrđuje se samo gemološkom opremom. Razlika je u poreklu, a time i u ceni.": "Olyan gyémánt, amely laboratóriumban keletkezett, nem a földben. Kémiai összetétele, keménysége és ragyogása ugyanaz, mint a természetes gyémánté, a különbség szabad szemmel nem látható — csak gemológiai műszerekkel állapítható meg. A különbség az eredetben, és így az árban van.",
     "Zato su lab grown komadi kod nas uvek odvojeni od prirodnog nakita i jasno označeni. Više o razlici:": "Ezért nálunk a laborgyémántos darabok mindig külön vannak a természetes ékszerektől, és egyértelműen jelölve. Bővebben a különbségről:",
