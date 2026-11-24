@@ -35,6 +35,15 @@ collections:
                   - { label: "Minđuše", value: "mindjuse" }
                   - { label: "Ogrlice i privesci", value: "ogrlice" }
                   - { label: "Narukvice", value: "narukvice" }
+              - label: "Dijamant"
+                name: "dijamant"
+                widget: "select"
+                default: "prirodni"
+                required: false
+                options:
+                  - { label: "Prirodni", value: "prirodni" }
+                  - { label: "Laboratorijski (lab grown)", value: "lab" }
+                hint: "Lab grown komadi se prikazuju samo na stranici Lab grown dijamanti, sa jasnom oznakom — nikad među prirodnim nakitom."
               - { label: "Materijal", name: "materijal", widget: "string", hint: "npr. 14K žuto zlato · 1,83 g" }
               - { label: "Kamenje", name: "kamenje", widget: "string", required: false, hint: "npr. Dijamant 0,28 ct · F / VS2" }
               - { label: "Cena", name: "cena", widget: "string", hint: "npr. 105.500 RSD  ili  Cena na upit" }
