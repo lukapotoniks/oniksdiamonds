@@ -775,6 +775,126 @@
         "images/uploads/file_0000000077c882109611aad3133636c0.png",
         "images/uploads/dta06745.jpg"
       ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski verenički prsten ovalni sa bočnim kamenjem",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Dijamant 0.20 ct · F / SI ·  Dijamanti 0.06 ct · F / SI",
+      "cena": "93.600 RSD",
+      "slike": [
+        "images/uploads/file_00000000c2ac8210ab130398ff30dccf.png",
+        "images/uploads/dta06804.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Prsten sa ametistom i dijamantima halo",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K belo zlato",
+      "kamenje": "Ametist 0.55 ct · Dijamanti 0.23 ct · FG / SI1",
+      "cena": "102.960 RSD",
+      "slike": [
+        "images/uploads/file_00000000f27c820a87cddba77ce1a31e.png",
+        "images/uploads/dta06818.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Minđuše sa ametistom i dijamantima halo",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "mindjuse"
+      ],
+      "materijal": "14K belo zlato",
+      "kamenje": "Ametist 1.23 ct · Dijamanti 0.28 ct · FG / SI1",
+      "cena": "101.790 RSD",
+      "slike": [
+        "images/uploads/file_00000000acdc820aabfe06936b5e17e9.png",
+        "images/uploads/file_000000003c84820aba7680a71cedd336.png"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa ametistom i dijamantima halo",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K belo zlato",
+      "kamenje": "Ametist 0.60 ct · Dijamanti 0.14 ct · FG / SI1",
+      "cena": "81.900 RSD",
+      "slike": [
+        "images/uploads/file_0000000042b4821081f11f8a7c31f5ba.png",
+        "images/uploads/dta06980.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Minđuše sa london topazom i dijamantima halo",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "mindjuse"
+      ],
+      "materijal": "14K belo zlato",
+      "kamenje": "London topaz 5.05 ct · Dijamanti 0.36ct · FG / SI1",
+      "cena": "142.900 RSD",
+      "slike": [
+        "images/uploads/file_00000000bb448210b54b724d8351d1bc.png",
+        "images/uploads/file_00000000fa70820aa8a17c154476b338.png"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa london topazom i dijamantima halo",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K belo zlato",
+      "kamenje": "London topaz 2.33 ct · Dijamanti 0.21 ct · FG / SI1",
+      "cena": "102.960 RSD",
+      "slike": [
+        "images/uploads/file_00000000fd2c8210add0bf57ddca6976.png",
+        "images/uploads/dta06963.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski prsten sa pear rubinom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Rubin 0.26 ct · Dijamanti 0.13 ct · F / SI",
+      "cena": "87.750 RSD",
+      "slike": [
+        "images/uploads/file_00000000f0e8820aa35616b46b950c68.png",
+        "images/uploads/dta06795.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski prsten sa pear roze safirom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Roze safir 0.22 ct · Dijamanti 0.13 ct · F / SI",
+      "cena": "81.900 RSD",
+      "slike": [
+        "images/uploads/file_00000000e8448210ac7dcb54c1719d12.png",
+        "images/uploads/dta06776.jpg"
+      ]
     }
   ]
 }
