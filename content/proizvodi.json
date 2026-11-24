@@ -475,6 +475,306 @@
         "images/uploads/oval-pink-gemstone-floral-halo-ring.png",
         "images/uploads/file_0000000088b4821088c456d1c55c53d9.png"
       ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa rubinom sunce",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Rubin 0.64 ct · Dijamanti 0.08ct · F / VS2",
+      "cena": "81.870 RSD",
+      "slike": [
+        "images/uploads/file_000000006500820ab5ee29f17d2dbd15.png",
+        "images/uploads/dta06995.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Prsten sa tanzanitom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Tanzanit 0.82 ct · Dijamanti 0.06 ct · F / SI",
+      "cena": "88.780 RSD",
+      "slike": [
+        "images/uploads/file_0000000094508210b0b552abc52c0ddf.png",
+        "images/uploads/dta06782.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Prsten sa ovalnim rubinom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Rubin 0.32 ct · Dijamanti 0.10 ct · F / SI",
+      "cena": "81.900 RSD",
+      "slike": [
+        "images/uploads/file_0000000038fc82108da33d63c35dcfc7.png",
+        "images/uploads/dta06769.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa ovalnim rubinom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Rubin 0.30 ct · Dijamanti 0.05 ct · F / SI",
+      "cena": "74.980 RSD",
+      "slike": [
+        "images/uploads/file_000000007ae4820a84835c80ae5d9ca8.png",
+        "images/uploads/dta06973.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Minđuše sa ovalnim rubinom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "mindjuse"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Rubin 0.65 ct · Dijamanti 0.10 ct · F / SI",
+      "cena": "79.970 RSD",
+      "slike": [
+        "images/uploads/file_0000000070d88210b01c9d90c3a3e71c.png",
+        "images/uploads/file_00000000a7d8820a95cde4a5cfc647c3.png"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa biserom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K žuto zlato ",
+      "kamenje": "Prirodni Biser · Dijamanti 0.05 ct · F / SI",
+      "cena": "74.880 RSD",
+      "slike": [
+        "images/uploads/file_000000008cf48210991d0ccd0424c225.png",
+        "images/uploads/dta06968.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Minđuše sa smaragdom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "mindjuse"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Smaragd 0.43 ct · Dijamanti 0.10 ct · F / SI",
+      "cena": "74.670 RSD",
+      "slike": [
+        "images/uploads/file_000000002300821091c2274c4853782b.png",
+        "images/uploads/file_00000000f4e8820aaf50429949e266b1.png"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski prsten V",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Dijamanti 0.24 ct · F / SI",
+      "cena": "75.420 RSD",
+      "slike": [
+        "images/uploads/file_00000000b3ec8210997b3658637d7b65.png",
+        "images/uploads/dta06805.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa ovalnim smaragdom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Smaragd 0.21 ct · Dijamanti · F / SI",
+      "cena": "69.970 RSD",
+      "slike": [
+        "images/uploads/file_00000000c900820a8c374a6e0d9b2e04.png",
+        "images/uploads/dta06994.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa dijamantom fiksna",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K žuto zlato ",
+      "kamenje": "Dijamant 0.13 ct · F / SI",
+      "cena": "69.000 RSD",
+      "slike": [
+        "images/uploads/file_000000007078820aacd97f66fcd4ad9b.png",
+        "images/uploads/dta07001.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa dijamantom fiksna bela",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K belo zlato ",
+      "kamenje": "Dijamant 0.15 ct · F / SI",
+      "cena": "69.000 RSD",
+      "slike": [
+        "images/uploads/file_00000000a02c820aae09a1f72b8ce6d2.png",
+        "images/uploads/dta07010.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Ogrlica sa ovalnim plavim safirom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "ogrlice"
+      ],
+      "materijal": "14K belo zlato ",
+      "kamenje": "Safir 0.29 ct · Dijamanti 0.05 ct · F / SI",
+      "cena": "69.920 RSD",
+      "slike": [
+        "images/uploads/file_000000002f5c820aaacce8f926ae73b7.png",
+        "images/uploads/dta06989.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Minđuše sa ovalnim plavim safirom",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "mindjuse"
+      ],
+      "materijal": "14K belo zlato",
+      "kamenje": "Safiri 0.59 ct · Dijamanti 0.10 ct · F / SI",
+      "cena": "70.200 RSD",
+      "slike": [
+        "images/uploads/file_00000000f8a8821099287b79fdc01db1.png",
+        "images/uploads/file_00000000b260820a826919d183a3c571.png"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski prsten sa pear plavim safirom i dijamantima",
+      "kolekcija": "Sabina ",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K belo zlato ",
+      "kamenje": "Safir 0.29ct · Dijamanti 0.12 ct · F / SI",
+      "cena": "82.000 RSD",
+      "slike": [
+        "images/uploads/file_000000003170820a91bfc505e6d522ca.png",
+        "images/uploads/dta06836.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Prsten sa ovalnim plavim safirom i dijamantima",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K belo zlato ",
+      "kamenje": "Safir 0.28 ct · Dijamanti 0.10 ct · F / SI",
+      "cena": "75.940 RSD",
+      "slike": [
+        "images/uploads/file_000000008054820a8cee1917193787a8.png",
+        "images/uploads/dta06825.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski prsten ruža",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "prstenje"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Dijamanti 0.50 ct · F / SI",
+      "cena": "104.960 RSD",
+      "slike": [
+        "images/uploads/file_00000000c5548210ba78b72a2c39c640.png",
+        "images/uploads/dta06753.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Marquise dijamantski verenički prsten",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Dijamanti 0.12 ct · F / SI",
+      "cena": "73.570 RSD",
+      "slike": [
+        "images/uploads/file_00000000be18820aa493db64daa4e9a3.png",
+        "images/uploads/dta06758.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski verenički prsten ovalni cluster ",
+      "kolekcija": "Sabina ",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "14K žuto zlato ",
+      "kamenje": "Dijamanti 0.44 ct · F / VS2",
+      "cena": "87.750 RSD",
+      "slike": [
+        "images/uploads/file_00000000bcbc820a83c3c138c8b6c2a7.png",
+        "images/uploads/dta06788.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski verenički prsten round halo",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "14 K belo zlato ",
+      "kamenje": "Dijamant 0.14 ct · F / SI , Dijamanti 0.13 ct ·  F / SI",
+      "cena": "86.750 RSD",
+      "slike": [
+        "images/uploads/file_00000000234c8210b8b2480a2100077c.png",
+        "images/uploads/dta06846.jpg"
+      ]
+    },
+    {
+      "stanje": "na-stanju",
+      "naziv": "Dijamantski verenički prsten square cluster",
+      "kolekcija": "Sabina",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "14K žuto zlato",
+      "kamenje": "Dijamanti 0.40 ct · F / VS2",
+      "cena": "87.750 RSD",
+      "slike": [
+        "images/uploads/file_0000000077c882109611aad3133636c0.png",
+        "images/uploads/dta06745.jpg"
+      ]
     }
   ]
 }
