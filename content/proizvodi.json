@@ -895,6 +895,85 @@
         "images/uploads/file_00000000e8448210ac7dcb54c1719d12.png",
         "images/uploads/dta06776.jpg"
       ]
+    },
+    {
+      "dijamant": "lab",
+      "stanje": "na-stanju",
+      "naziv": "L.G.D. Verenički prsten marquise",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "18K žuto zlato",
+      "kamenje": "Lab Grown Dijamant 0.54 ct · F / VS1",
+      "cena": "105.000 RSD",
+      "slike": [
+        "images/uploads/file_0000000029b4820ab7d903b03123f5d0.png",
+        "images/uploads/dta06870.jpg",
+        "images/uploads/dta06874.jpg"
+      ]
+    },
+    {
+      "dijamant": "lab",
+      "stanje": "na-stanju",
+      "naziv": "L.G.D. Verenički prsten ovalni ",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "18K žuto zlato",
+      "kamenje": "Lab Grown Dijamant 0.56 ct · D / VS1",
+      "cena": "93.600 RSD",
+      "slike": [
+        "images/uploads/file_000000001c008210bb5d270d23bcf9c1.png",
+        "images/uploads/dta06881.jpg",
+        "images/uploads/dta06885.jpg"
+      ]
+    },
+    {
+      "dijamant": "lab",
+      "stanje": "na-stanju",
+      "naziv": "L.G.D. Verenički prsten ovalni 14K",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "14K belo zlato ",
+      "kamenje": "Lab Grown Dijamant 1.08 ct · D / VS1",
+      "cena": "74.990RSD",
+      "slike": [
+        "images/uploads/file_00000000601c82108c2f7b50145ccdc1.png",
+        "images/uploads/dta06892.jpg",
+        "images/uploads/dta06899.jpg"
+      ]
+    },
+    {
+      "dijamant": "lab",
+      "stanje": "na-stanju",
+      "naziv": "L.G.D. Verenički prsten ovalni i pave",
+      "vrsta": [
+        "verenicko"
+      ],
+      "materijal": "18K žuto zlato",
+      "kamenje": "Lab Grown Dijamant 1.00 ct · E / VS1 , Lab Grown Dijamanti 0.24 ct · E / VS1",
+      "cena": "128.700 RSD",
+      "slike": [
+        "images/uploads/file_00000000dc688210beaa883943e29343.png",
+        "images/uploads/dta06850.jpg",
+        "images/uploads/dta06862.jpg"
+      ]
+    },
+    {
+      "dijamant": "lab",
+      "stanje": "na-stanju",
+      "naziv": "L.G.D. Minđuše Marquise",
+      "vrsta": [
+        "mindjuse"
+      ],
+      "materijal": "14K belo zlato",
+      "kamenje": "Lab Grown Dijamant 0.96 ct · E / VS1",
+      "cena": "81.900 RSD",
+      "slike": [
+        "images/uploads/file_00000000f78882108a5db79bb0f21446.png",
+        "images/uploads/file_00000000e478820aacde178b83c7d61f.png"
+      ]
     }
   ]
 }
