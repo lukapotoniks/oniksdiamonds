@@ -40,7 +40,8 @@
       "kamenje": "Dijamanti 0,11 ct · F / VS2",
       "cena": "58.800 RSD",
       "slike": [
-        "images/cross-pendant.jpg"
+        "images/uploads/file_000000005b40820aa9172442d9e4e77d.png",
+        "images/uploads/file_0000000069d082108720150c83510227.png"
       ],
       "stanje": "na-stanju"
     },
@@ -159,8 +160,8 @@
       "kamenje": "Dijamant 0.13 ct · E / VS2",
       "cena": "54.990 RSD",
       "slike": [
-        "images/uploads/slika-2.png",
-        "images/uploads/dijamant-blizi-kadar.png"
+        "images/uploads/file_0000000048cc8210af8ec481d74c6b92.png",
+        "images/uploads/falila-manja.png"
       ],
       "stanje": "na-stanju"
     },
@@ -174,7 +175,8 @@
       "kamenje": "Dijamant 0.32 ct · E / VS2",
       "cena": "109.900 RSD",
       "slike": [
-        "images/uploads/slika-2.png"
+        "images/uploads/file_0000000048cc8210af8ec481d74c6b92.png",
+        "images/uploads/falila.png"
       ],
       "stanje": "na-stanju"
     },
@@ -188,8 +190,8 @@
       "kamenje": "Dijamant 0.34 ct · F / VS1",
       "cena": "111.900 RSD",
       "slike": [
-        "images/uploads/slika26.png",
-        "images/uploads/slika25.png"
+        "images/uploads/file_00000000d318821081b5f7b76e76f450.png",
+        "images/uploads/falila-kocka.png"
       ],
       "stanje": "na-stanju"
     },
@@ -294,7 +296,8 @@
       "kamenje": "Dijamanti 0,06 ct · EF / SI1",
       "cena": "43.620 RSD",
       "slike": [
-        "images/uploads/file_000000004fe4820aa5f0ebd52be83cb7.png"
+        "images/uploads/file_000000004fe4820aa5f0ebd52be83cb7.png",
+        "images/uploads/file_00000000e8c8820aadd67efd58ef7896.png"
       ]
     },
     {
@@ -308,7 +311,8 @@
       "kamenje": "Peridot 0.38 ct , Dijamanti 0,06 ct ·  EF / SI1",
       "cena": "57.440 RSD",
       "slike": [
-        "images/uploads/file_000000006ef8821094cce9e80787d69e.png"
+        "images/uploads/file_000000006ef8821094cce9e80787d69e.png",
+        "images/uploads/file_00000000cac4820a9610b37bc2c50ad2.png"
       ]
     },
     {
@@ -322,13 +326,14 @@
       "kamenje": "London Topaz 0,40 ct , Dijamanti 0.05 ct · EF / SI1",
       "cena": "58.670 RSD",
       "slike": [
-        "images/uploads/gold-ring-with-london-blue-topaz.png"
+        "images/uploads/gold-ring-with-london-blue-topaz.png",
+        "images/uploads/file_0000000010d082108c8227a6c34bf1a7.png"
       ]
     },
     {
       "stanje": "na-stanju",
       "naziv": "Prsten sa plavim safirom i dijamantima",
-      "kolekcija": "Elena",
+      "kolekcija": "Hana",
       "vrsta": [
         "prstenje"
       ],
@@ -336,7 +341,8 @@
       "kamenje": "Safir 0.30 ct (royal blue) , Dijamanti 0.09 ct G / VS1",
       "cena": "64.770 RSD",
       "slike": [
-        "images/uploads/file_00000000c5f88243b0170f12ab8ba9f6.png"
+        "images/uploads/file_00000000c5f88243b0170f12ab8ba9f6.png",
+        "images/uploads/file_00000000cd3c8210b0ff9986f091661a.png"
       ]
     },
     {
@@ -350,7 +356,8 @@
       "kamenje": "Smaragdi 0.24 ct , Dijamanti 0,05 ct EF / SI1",
       "cena": "74.920 RSD",
       "slike": [
-        "images/uploads/file_000000004f0c81f4857ae5c2df570e45.png"
+        "images/uploads/file_000000004f0c81f4857ae5c2df570e45.png",
+        "images/uploads/file_000000006d648210b6a5f86addce2837.png"
       ]
     },
     {
@@ -364,7 +371,8 @@
       "kamenje": "Plavi safir 0,61 ct , Dijamanti 0,15 ct · EF / SI1",
       "cena": "92.270 RSD ",
       "slike": [
-        "images/uploads/white-gold-sapphire-halo-ring.png"
+        "images/uploads/white-gold-sapphire-halo-ring.png",
+        "images/uploads/file_00000000ae808210950f53548a36a6f1.png"
       ]
     },
     {
@@ -392,7 +400,8 @@
       "kamenje": "Safiri 0.92 ct , Dijamant 0.04 ct · EF / SI1",
       "cena": "84.920 RSD",
       "slike": [
-        "images/uploads/six-petal-blue-sapphire-flower-ring.png"
+        "images/uploads/six-petal-blue-sapphire-flower-ring.png",
+        "images/uploads/file_000000002bf08210999452d4e2bf9293.png"
       ]
     },
     {
@@ -406,7 +415,8 @@
       "kamenje": "Smaragd 0,47 ct , Dijamanti 0,16 ct · EF / SI1",
       "cena": "94.820 RSD",
       "slike": [
-        "images/uploads/proportional-emerald-ring-with-baguette-accents.png"
+        "images/uploads/proportional-emerald-ring-with-baguette-accents.png",
+        "images/uploads/file_0000000090648210b922e3b97b677fd2.png"
       ]
     },
     {
@@ -462,7 +472,8 @@
       "kamenje": "Turmalin 0.75 ct , Dijamanti 0.41 ct  · EF / SI1 ",
       "cena": "160.000 RSD",
       "slike": [
-        "images/uploads/oval-pink-gemstone-floral-halo-ring.png"
+        "images/uploads/oval-pink-gemstone-floral-halo-ring.png",
+        "images/uploads/file_0000000088b4821088c456d1c55c53d9.png"
       ]
     }
   ]
