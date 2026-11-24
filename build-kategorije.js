@@ -6,6 +6,7 @@
 //   mindjuse/index.html
 //   ogrlice-i-privesci/index.html
 //   narukvice/index.html
+//   lab-grown-dijamanti/index.html  (products marked "Laboratorijski" in the admin — shown ONLY here)
 // and adds those URLs to sitemap.xml (run AFTER build-blog.js — see netlify.toml).
 // Styles and header are lifted from index.html at build time so the pages
 // always match the homepage. No dependencies.
@@ -34,6 +35,11 @@ const CATS = [
     meta: 'Narukvice sa prirodnim dijamantima i dragim kamenjem u 14K zlatu. Oniks Diamonds & Gems, Subotica.' }
 ];
 
+// Lab grown — own page; these products never appear on the natural pages above
+const LAB = { key: 'lab', slug: 'lab-grown-dijamanti', name: 'Lab grown dijamanti', label: 'LAB GROWN',
+  lead: 'Dijamanti nastali u laboratoriji, u 14K zlatu. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.',
+  meta: 'Nakit sa laboratorijskim (lab grown) dijamantima u 14K zlatu, jasno označen. Oniks Diamonds & Gems, Subotica.' };
+
 // ---------- helpers ----------
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const slug = s => String(s || '').toLowerCase().replace(/[čć]/g, 'c').replace(/š/g, 's').replace(/ž/g, 'z').replace(/đ/g, 'dj').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -49,6 +55,9 @@ const prods = (readJson('content/proizvodi.json', {}).proizvodi || []).map(p => 
   slike: (p.slike || []).filter(Boolean)
 }));
 const cols = readJson('content/kolekcije.json', {}).kolekcije || [];
+const isLab = p => p.dijamant === 'lab';
+const natural = prods.filter(p => !isLab(p));
+const labProds = prods.filter(p => isLab(p) && p.naziv);
 
 // ---------- styles + header lifted from index.html ----------
 const home = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
@@ -63,6 +72,14 @@ header = header
   .replace(/href="([a-z-]+)\/"/g, 'href="/$1/"')
   .replace(/src="images\//g, 'src="/images/')
   .replace('<header id="siteHeader">', '<header id="siteHeader" class="on-light">');
+{
+  const present = [];
+  natural.forEach(p => { const s = slug(p.kolekcija); if (s && !present.includes(s)) present.push(s); });
+  { const ord = s => { const i = cols.findIndex(c => slug(c.naziv) === s); return i < 0 ? 999 : i; }; present.sort((a, b) => ord(a) - ord(b)); }
+  const nm = s => { const c = cols.find(x => slug(x.naziv) === s); return (c ? c.naziv : natural.find(p => slug(p.kolekcija) === s).kolekcija).trim(); };
+  const links = present.map(s => `<a href="/#kolekcija-${s}">${esc(nm(s))}</a>`).join('\n          ') + '\n          <a href="/#kategorije">Sve kolekcije</a>';
+  header = header.replace(/(<span class="drop-menu" id="colMenu">)[\s\S]*?(<\/span>)/, `$1\n          ${links}\n        $2`);
+}
 
 const CSS = `
   body{padding-top:0;}
@@ -88,6 +105,12 @@ const CSS = `
   .other .tile{aspect-ratio:4/5;}
   @media(min-width:700px){ .other .tiles{grid-template-columns:repeat(4,1fr);} .other .tile{aspect-ratio:3/4;} }
   footer{border-top:1px solid var(--line);}
+  .cat-strip a.lab{color:var(--gold-deep);}
+  .lab-tag{display:inline-block; margin:2px 0 8px; padding:4px 9px; border:1px solid var(--gold); font-size:0.62rem; letter-spacing:0.16em; color:var(--gold-deep); background:var(--white);}
+  .lab-info{max-width:680px; margin:0 auto 7vh; padding:26px 28px; background:var(--white); border:1px solid var(--line);}
+  .lab-info h2{font-family:var(--serif); font-weight:400; font-size:1.35rem; line-height:1.3;}
+  .lab-info p{margin-top:12px; color:var(--espresso-soft); font-size:0.95rem; line-height:1.7;}
+  .lab-info a{color:var(--gold-deep); border-bottom:1px solid var(--gold); padding-bottom:1px;}
 `;
 
 // ---------- dostupnost (polje "Dostupnost" u adminu; prazno = na stanju) ----------
@@ -98,11 +121,12 @@ const stanjeOf = p => p.stanje === 'po-porudzbini' ? 'po-porudzbini' : 'na-stanj
 function card(p) {
   const stanje = stanjeOf(p);
   const imgs = p.slike.map(absImg);
-  const metaBits = [p.kolekcija ? 'KOLEKCIJA ' + p.kolekcija.toUpperCase() : '', (p.materijal || '').toUpperCase(), (p.kamenje || '').toUpperCase(), p.cena || ''].filter(Boolean);
+  const metaBits = [isLab(p) ? 'LAB GROWN DIJAMANT' : '', p.kolekcija ? 'KOLEKCIJA ' + p.kolekcija.toUpperCase() : '', (p.materijal || '').toUpperCase(), (p.kamenje || '').toUpperCase(), p.cena || ''].filter(Boolean);
   const slides = imgs.map(s => `<img loading="lazy" decoding="async" src="${esc(s)}" alt="${esc(p.naziv)}">`).join('');
   const dots = imgs.length > 1 ? `<div class="dots">${imgs.map((_, i) => `<i class="${i === 0 ? 'on' : ''}"></i>`).join('')}</div>` : '';
-  return `<div class="prod" data-col="${esc(slug(p.kolekcija))}" data-imgs="${esc(imgs.join('|'))}" data-name="${esc(p.naziv)}" data-meta="${esc(metaBits.join(' · '))}" data-stanje="${stanje}">
+  return `<div class="prod" data-col="${esc(slug(p.kolekcija))}" data-cat="${esc(p.vrsta.join(' '))}" data-imgs="${esc(imgs.join('|'))}" data-name="${esc(p.naziv)}" data-meta="${esc(metaBits.join(' · '))}" data-stanje="${stanje}">
   <div class="ph"><div class="slider">${slides}</div>${dots}${imgs.length > 1 ? '<button class="nav-arrow prev" aria-label="Prethodna">&#10094;</button><button class="nav-arrow next" aria-label="Sledeća">&#10095;</button>' : ''}</div>
+  ${isLab(p) ? '<div class="lab-tag">LAB GROWN DIJAMANT</div>' : ''}
   <div class="nm">${esc(p.naziv)}</div>
   <div class="mt">${esc([p.kolekcija, p.materijal].filter(Boolean).join(' · ').toUpperCase())}</div>
   ${p.kamenje ? `<div class="sp">${esc(p.kamenje)}</div>` : ''}
@@ -128,7 +152,14 @@ const DOP = {
     "Bilo koji kamen, bilo koji oblik brušenja, vaš ili naš dizajn. Izrada po meri traje oko mesec dana od dogovora.": "Any stone, any cut, your design or ours. Made-to-order pieces take around a month from the agreement.",
     "Napravite svoj prsten": "Design your ring",
     "Ostale vrste nakita": "Other types of jewellery",
-    "Vrste nakita": "Jewellery types"
+    "Vrste nakita": "Jewellery types",
+    "Lab grown dijamanti": "Lab-grown diamonds", "LAB GROWN": "LAB-GROWN", "LAB GROWN DIJAMANT": "LAB-GROWN DIAMOND", "Kolekcije": "Collections", "Sve kolekcije": "All collections",
+    "Dijamanti nastali u laboratoriji, u 14K zlatu. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.": "Laboratory-grown diamonds set in 14K gold. Every piece on this page is clearly labelled as lab-grown.",
+    "Šta je lab grown dijamant?": "What is a lab-grown diamond?",
+    "Dijamant koji je nastao u laboratoriji, a ne u zemlji. Hemijski sastav, tvrdoća i sjaj su isti kao kod prirodnog dijamanta, i razlika se ne vidi golim okom — utvrđuje se samo gemološkom opremom. Razlika je u poreklu, a time i u ceni.": "A diamond formed in a laboratory rather than in the earth. Its chemical composition, hardness and brilliance are the same as a natural diamond's, and the difference cannot be seen with the naked eye — only gemological equipment can tell them apart. The difference is in origin, and therefore in price.",
+    "Zato su lab grown komadi kod nas uvek odvojeni od prirodnog nakita i jasno označeni. Više o razlici:": "That is why our lab-grown pieces are always kept separate from natural jewellery and clearly labelled. More on the difference:",
+    "Lab grown komadi uskoro na sajtu. Za ponudu nas pozovite ili svratite u radnju.": "Lab-grown pieces coming to the site soon. Call us or visit the shop for what's available.",
+    "Nakit sa prirodnim dijamantima": "Jewellery with natural diamonds"
   },
   hu: {
     "Dijamantski verenički prstenovi u 14K zlatu — solitaire, halo i klaster modeli. Svaki kamen je prirodan i dolazi sa sertifikatom.": "Gyémánt eljegyzési gyűrűk 14K aranyban — szoliter, halo és klaszter modellek. Minden kő természetes, és tanúsítvánnyal érkezik.",
@@ -142,7 +173,14 @@ const DOP = {
     "Bilo koji kamen, bilo koji oblik brušenja, vaš ili naš dizajn. Izrada po meri traje oko mesec dana od dogovora.": "Bármilyen kő, bármilyen csiszolás, az Ön vagy a mi tervünk. Az egyedi készítés a megegyezéstől számítva körülbelül egy hónap.",
     "Napravite svoj prsten": "Tervezze meg a gyűrűjét",
     "Ostale vrste nakita": "Más ékszertípusok",
-    "Vrste nakita": "Ékszertípusok"
+    "Vrste nakita": "Ékszertípusok",
+    "Lab grown dijamanti": "Laborban növesztett gyémántok", "LAB GROWN": "LABORGYÉMÁNT", "LAB GROWN DIJAMANT": "LABORBAN NÖVESZTETT GYÉMÁNT", "Kolekcije": "Kollekciók", "Sve kolekcije": "Összes kollekció",
+    "Dijamanti nastali u laboratoriji, u 14K zlatu. Svaki komad na ovoj stranici je jasno označen kao laboratorijski.": "Laborban növesztett gyémántok 14K aranyban. Ezen az oldalon minden darab egyértelműen laborgyémántként van jelölve.",
+    "Šta je lab grown dijamant?": "Mi a laborban növesztett gyémánt?",
+    "Dijamant koji je nastao u laboratoriji, a ne u zemlji. Hemijski sastav, tvrdoća i sjaj su isti kao kod prirodnog dijamanta, i razlika se ne vidi golim okom — utvrđuje se samo gemološkom opremom. Razlika je u poreklu, a time i u ceni.": "Olyan gyémánt, amely laboratóriumban keletkezett, nem a földben. Kémiai összetétele, keménysége és ragyogása ugyanaz, mint a természetes gyémánté, a különbség szabad szemmel nem látható — csak gemológiai műszerekkel állapítható meg. A különbség az eredetben, és így az árban van.",
+    "Zato su lab grown komadi kod nas uvek odvojeni od prirodnog nakita i jasno označeni. Više o razlici:": "Ezért nálunk a laborgyémántos darabok mindig külön vannak a természetes ékszerektől, és egyértelműen jelölve. Bővebben a különbségről:",
+    "Lab grown komadi uskoro na sajtu. Za ponudu nas pozovite ili svratite u radnju.": "Laborgyémántos darabok hamarosan az oldalon. A kínálatért hívjon minket vagy látogasson el az üzletbe.",
+    "Nakit sa prirodnim dijamantima": "Ékszerek természetes gyémánttal"
   }
 };
 const LANG_JS = `
@@ -200,13 +238,21 @@ const JS = `
   const drops = document.querySelectorAll('.has-drop');
   drops.forEach(d => { const b = d.querySelector('.drop-btn'); if (b) b.addEventListener('click', e => { e.stopPropagation(); drops.forEach(o => { if (o !== d) o.classList.remove('open'); }); d.classList.toggle('open'); }); });
   document.addEventListener('click', () => drops.forEach(d => d.classList.remove('open')));
-  // collection filter
+  // collection + type filters
+  let curCol = 'sve', curCat = 'sve';
+  const applyF = () => document.querySelectorAll('#prodGrid .prod').forEach(p => p.classList.toggle('hide',
+    !((curCol === 'sve' || p.dataset.col === curCol) && (curCat === 'sve' || (p.dataset.cat || '').split(' ').includes(curCat)))));
   const colBar = document.getElementById('colFilters');
   if (colBar) colBar.addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
     colBar.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
-    const col = b.dataset.col;
-    document.querySelectorAll('#prodGrid .prod').forEach(p => p.classList.toggle('hide', !(col === 'sve' || p.dataset.col === col)));
+    curCol = b.dataset.col; applyF();
+  });
+  const typeBar = document.getElementById('typeFilters');
+  if (typeBar) typeBar.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    typeBar.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
+    curCat = b.dataset.cat; applyF();
   });
   // sliders + arrows
   document.querySelectorAll('#prodGrid .prod').forEach(p => {
@@ -267,7 +313,24 @@ function page(cat, items) {
       return { '@type': 'ListItem', position: i + 1, item: prod };
     }) }
   };
-  const others = CATS.filter(c => c.key !== cat.key);
+  const lab = cat.key === 'lab';
+  const others = lab ? CATS.filter(c => natural.some(p => p.vrsta.includes(c.key))).slice(0, 4) : CATS.filter(c => c.key !== cat.key);
+  const presentTypes = lab ? CATS.filter(c => items.some(p => p.vrsta.includes(c.key))) : [];
+  const typeFilter = presentTypes.length > 1 ? `
+    <div class="filter-row" style="margin-bottom:6vh;">
+      <span class="filter-lab">VRSTA NAKITA</span>
+      <div class="cat-filters" id="typeFilters" style="margin-bottom:0;">
+        <button class="on" data-cat="sve">SVE</button>
+        ${presentTypes.map(c => `<button data-cat="${c.key}">${esc(c.label)}</button>`).join('')}
+      </div>
+    </div>` : '';
+  const ogImg = lab ? (items[0] && items[0].slike[0] ? (items[0].slike[0].startsWith('http') ? items[0].slike[0] : SITE + absImg(items[0].slike[0])) : SITE + TILE_IMG.verenicko) : SITE + TILE_IMG[cat.key];
+  const labInfo = lab ? `
+    <div class="lab-info">
+      <h2>Šta je lab grown dijamant?</h2>
+      <p>Dijamant koji je nastao u laboratoriji, a ne u zemlji. Hemijski sastav, tvrdoća i sjaj su isti kao kod prirodnog dijamanta, i razlika se ne vidi golim okom — utvrđuje se samo gemološkom opremom. Razlika je u poreklu, a time i u ceni.</p>
+      <p>Zato su lab grown komadi kod nas uvek odvojeni od prirodnog nakita i jasno označeni. Više o razlici: <a href="/blog/prirodni-ili-laboratorijski-dijamant/">prirodni ili laboratorijski dijamant</a>.</p>
+    </div>` : '';
   return `<!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -284,7 +347,7 @@ function page(cat, items) {
 <meta property="og:description" content="${esc(cat.meta)}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${SITE}${TILE_IMG[cat.key]}">
+<meta property="og:image" content="${ogImg}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 ${fonts}
 <style>${homeCss}${CSS}</style>
@@ -296,15 +359,18 @@ ${header}
   <div class="wrap">
     <nav class="cat-strip" aria-label="Vrste nakita">
       ${CATS.map(c => `<a href="/${c.slug}/" class="${c.key === cat.key ? 'on' : ''}">${esc(c.label)}</a>`).join('\n      ')}
+      <a href="/${LAB.slug}/" class="lab${lab ? ' on' : ''}">${esc(LAB.label)}</a>
     </nav>
     <div class="catp-head">
       <p class="eyebrow">Nakit</p>
       <h1>${esc(cat.name)}</h1>
       <p class="lead">${esc(cat.lead)}</p>
     </div>
+    ${labInfo}
+    ${typeFilter}
     ${filters}
     ${items.length ? `<div class="prod-grid" id="prodGrid">${items.map(card).join('\n')}</div>`
-      : `<p class="empty">Trenutno nema komada iz ove kategorije na sajtu. Izrađujemo ih po meri — javite nam se ili svratite u radnju.</p>`}
+      : `<p class="empty">${lab ? 'Lab grown komadi uskoro na sajtu. Za ponudu nas pozovite ili svratite u radnju.' : 'Trenutno nema komada iz ove kategorije na sajtu. Izrađujemo ih po meri — javite nam se ili svratite u radnju.'}</p>`}
   </div>
   <div class="cat-cta">
     <h2>Ne vidite baš ono što tražite?</h2>
@@ -312,7 +378,7 @@ ${header}
     <div class="btns"><a class="btn" href="/#kamenje">Napravite svoj prsten</a><a class="btn ghost" href="/#poseta">Zakažite razgovor</a></div>
   </div>
   <div class="wrap other">
-    <h2>Ostale vrste nakita</h2>
+    <h2>${lab ? 'Nakit sa prirodnim dijamantima' : 'Ostale vrste nakita'}</h2>
     <div class="tiles">
       ${others.map(c => `<a class="tile" href="/${c.slug}/"><img src="${TILE_IMG[c.key]}" alt="${esc(c.name)}" loading="lazy"><div class="tx"><h3>${esc(c.name)}</h3><span class="go">ISTRAŽITE</span></div></a>`).join('\n      ')}
     </div>
@@ -331,6 +397,8 @@ ${header}
       <a class="brand" style="color:var(--espresso);" href="/"><img class="mark" src="/images/logo.png" alt="Oniks amblem"><span class="brand-text" style="color:var(--espresso);">ONIKS DIAMONDS &amp; GEMS<sup>™</sup></span></a>
       <div class="footer-nav">
         ${CATS.map(c => `<a href="/${c.slug}/">${esc(c.name)}</a>`).join('\n        ')}
+        <a href="/${LAB.slug}/">${esc(LAB.name)}</a>
+        <a href="/#kategorije">Kolekcije</a>
         <a href="/#kamenje">Drago kamenje</a>
         <a href="/blog/">Blog</a>
         <a href="/#poseta">Kontakt</a>
@@ -351,12 +419,20 @@ ${LANG_JS}</script>
 // ---------- build ----------
 let built = 0;
 for (const cat of CATS) {
-  const items = prods.filter(p => p.vrsta.includes(cat.key) && p.naziv);
+  const items = natural.filter(p => p.vrsta.includes(cat.key) && p.naziv);
   const dir = path.join(ROOT, cat.slug);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), page(cat, items));
   built++;
   console.log(`kategorije: /${cat.slug}/ — ${items.length} product(s)`);
+}
+
+{
+  const dir = path.join(ROOT, LAB.slug);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'index.html'), page(LAB, labProds));
+  built++;
+  console.log(`kategorije: /${LAB.slug}/ — ${labProds.length} product(s)`);
 }
 
 // ---------- sitemap: add category URLs (keeps whatever build-blog.js wrote) ----------
