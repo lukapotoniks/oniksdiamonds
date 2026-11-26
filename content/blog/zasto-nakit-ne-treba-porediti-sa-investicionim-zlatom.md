@@ -1,11 +1,14 @@
 ---
-jezik: "sr"
-par: "zasto-nakit-ne-treba-porediti-sa-investicionim-zlatom"
-naslov: "Zašto nakit ne treba porediti sa investicionim zlatom"
+jezik: sr
+par: zasto-nakit-ne-treba-porediti-sa-investicionim-zlatom
+naslov: Zašto nakit ne treba porediti sa investicionim zlatom
 datum: 2026-11-26T09:00:00.000Z
-slika: "images/uploads/polished-gold-ring-on-hand.png"
-uvod: "Sve češće se čuje da je nakit bačen novac i da je pametnije kupiti investiciono zlato. Za štednju je investiciono zlato zaista bolji izbor — ali nakit nije promašena investicija, nego sasvim druga stvar. Evo zašto."
-meta_opis: "Investiciono zlato ili nakit: zašto se ne porede po istom merilu, šta plaćate kad kupujete nakit i zašto zlato u nakitu ne gubi svoju vrednost."
+slika: images/uploads/file_0000000090648210b922e3b97b677fd2.png
+uvod: Sve češće se čuje da je nakit bačen novac i da je pametnije kupiti
+  investiciono zlato. Za štednju je investiciono zlato zaista bolji izbor — ali
+  nakit nije promašena investicija, nego sasvim druga stvar. Evo zašto.
+meta_opis: "Investiciono zlato ili nakit: zašto se ne porede po istom merilu,
+  šta plaćate kad kupujete nakit i zašto zlato u nakitu ne gubi svoju vrednost."
 ---
 U tekstu [Otkup zlata — zašto je otkupna cena upola manja od cene novog nakita](/blog/zasto-je-otkupna-cena-zlata-manja/) objasnili smo kroz šta zlato prolazi od otkupa do novog komada u izlogu. Posle tog teksta često se čuje sledeća rečenica: „Znači, nakit je bačen novac. Bolje je kupiti investiciono zlato.“
 
