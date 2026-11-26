@@ -1,11 +1,16 @@
 ---
-jezik: "hu"
-par: "zasto-nakit-ne-treba-porediti-sa-investicionim-zlatom"
-naslov: "Miért nem érdemes az ékszert a befektetési arannyal összehasonlítani"
+jezik: hu
+par: zasto-nakit-ne-treba-porediti-sa-investicionim-zlatom
+naslov: Miért nem érdemes az ékszert a befektetési arannyal összehasonlítani
 datum: 2026-11-26T09:00:00.000Z
-slika: "images/uploads/polished-gold-ring-on-hand.png"
-uvod: "Egyre gyakrabban hallani, hogy az ékszer kidobott pénz, és okosabb befektetési aranyat venni. Megtakarításra a befektetési arany valóban jobb választás — az ékszer azonban nem elhibázott befektetés, hanem egészen más dolog. Íme, miért."
-meta_opis: "Befektetési arany vagy ékszer: miért nem mérhetők egy mércével, mit fizet, amikor ékszert vesz, és miért nem veszíti el értékét az ékszerben lévő arany."
+slika: images/uploads/file_0000000090648210b922e3b97b677fd2.png
+uvod: Egyre gyakrabban hallani, hogy az ékszer kidobott pénz, és okosabb
+  befektetési aranyat venni. Megtakarításra a befektetési arany valóban jobb
+  választás — az ékszer azonban nem elhibázott befektetés, hanem egészen más
+  dolog. Íme, miért.
+meta_opis: "Befektetési arany vagy ékszer: miért nem mérhetők egy mércével, mit
+  fizet, amikor ékszert vesz, és miért nem veszíti el értékét az ékszerben lévő
+  arany."
 ---
 Az [Aranyfelvásárlás — miért feleannyi a felvásárlási ár, mint az új ékszer ára](/blog/hu/miert-alacsonyabb-az-arany-felvasarlasi-ara/) című cikkünkben elmagyaráztuk, milyen utat jár be az arany a felvásárlástól az új darabig a kirakatban. A cikk után gyakran halljuk ezt a mondatot: „Akkor az ékszer kidobott pénz. Jobb befektetési aranyat venni.”
 
